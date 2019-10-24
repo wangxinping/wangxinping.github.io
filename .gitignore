@@ -1,0 +1,14 @@
+# Log file
+*.log
+
+### IntelliJ IDEA ###
+.idea
+.idea/
+
+### VS Code ###
+.vscode/
+
+### OS Files ###
+.DS_Store
+.Trashes
+.swp
