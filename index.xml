@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遮天个人站</title>
+    <link>https://wangxinping.github.io/</link>
+      <atom:link href="https://wangxinping.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>遮天个人站</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 15:15:11 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>遮天个人站</title>
+      <link>https://wangxinping.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Tips for Interview</title>
+      <link>https://wangxinping.github.io/post/tips-for-interview/</link>
+      <pubDate>Tue, 29 Oct 2019 15:15:11 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/tips-for-interview/</guid>
+      <description>&lt;p&gt;mysql数据存储是怎么组织的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mysql索引是怎么组织的，有什什么需要注意的地⽅方&lt;/li&gt;
+&lt;li&gt;主键与其它索引的区别&lt;/li&gt;
+&lt;li&gt;java/c++多态是怎么实现的&lt;/li&gt;
+&lt;li&gt;⽅方法调⽤用时⽅方法栈的动作，哪些资源需要压栈，锁是否需要压栈&lt;/li&gt;
+&lt;li&gt;锁实现机制&lt;/li&gt;
+&lt;li&gt;垃圾回收算法，root节点，资源引⽤用计数为0后，⻢马上就回收资源吗？有没
+有办法再次获取并使⽤用此资源&lt;/li&gt;
+&lt;li&gt;多态是如何实现的&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Markdown</title>
+      <link>https://wangxinping.github.io/post/welcome-to-markdown/</link>
+      <pubDate>Fri, 18 Oct 2019 13:20:51 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Welcome to Git</title>
+      <link>https://wangxinping.github.io/post/welcome-to-git/</link>
+      <pubDate>Thu, 17 Oct 2019 20:12:48 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-git/</guid>
+      <description>&lt;h2 id=&#34;ssh-密钥&#34;&gt;SSH 密钥&lt;/h2&gt;
+&lt;h3 id=&#34;生成-ssh-密钥&#34;&gt;生成 SSH 密钥&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ ssh-keygen -t rsa -b &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;your_email@example.com&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置-ssh-公钥到服务器&#34;&gt;配置 SSH 公钥到服务器&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ ssh-copy-id -i ~/.ssh/id_rsa.pub username@server_host
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;基本配置&#34;&gt;基本配置&lt;/h2&gt;
+&lt;h3 id=&#34;配置个人信息&#34;&gt;配置个人信息&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;全局配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git config --global user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[name]&amp;#34;&lt;/span&gt;
+$ git config --global user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[email address]&amp;#34;&lt;/span&gt;
+$ git config --global color.ui auto
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;项目配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git config user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[name]&amp;#34;&lt;/span&gt;
+$ git config user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[email address]&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git config --list
+user.name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;John Doe
+user.email&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;johndoe@example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;新建-git-仓库&#34;&gt;新建 Git 仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ cd /git_repository_path
+$ mkdir project.git
+$ cd project.git
+$ git init --bare
+Initialized empty Git repository in /git_repository_path/project.git/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git clone git@gitserver:/git_repository_path/project.git
+$ cd project
+$ vim README
+$ git add .
+$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;update the README file&amp;#39;&lt;/span&gt;
+$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;忽略规则&#34;&gt;忽略规则&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 &lt;code&gt;.gitignore&lt;/code&gt; 文件中我们可以配置需要忽略哪些文件和文件夹。注意，这个文件仅对还没有被纳入 Git 版本管理的文件生效，要停止已被追踪文件的版本管理可以使用命令&lt;code&gt;git rm --cached&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;规则&#34;&gt;规则&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空行不匹配作何文件，可以用空行来做来分隔以增强可读性。&lt;/li&gt;
+&lt;li&gt;以 &lt;code&gt;#&lt;/code&gt; 开头的行代表注释。但如果在 &lt;code&gt;#&lt;/code&gt; 前面有一个转义字符（&lt;code&gt;\&lt;/code&gt;）则匹配井号（&lt;code&gt;#&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;一般情况下行尾的空格会被忽略，但当空格前有转义字符（&lt;code&gt;\&lt;/code&gt;）时除外。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt; 前缀用于取反，即 &lt;code&gt;!&lt;/code&gt; 后面匹配到的本应该被排除的文件会被加入进来。但如果某文件的父目录已被排除，则该文件不会被再次加入进来，所以任何被包含在其它匹配项里面文件的匹配不会生效，不管它是在哪里配置的。另外，带转义的 &lt;code&gt;!&lt;/code&gt;（&lt;code&gt;\!&lt;/code&gt;）匹配 &lt;code&gt;!&lt;/code&gt; 本身。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; 被用作目录分隔符，可被用于匹配模式的开头、中间或末尾。&lt;/li&gt;
+&lt;li&gt;如果匹配模式开头或中间（或两者都有）存在 &lt;code&gt;/&lt;/code&gt;，则模式是相对于 &lt;code&gt;.gitignore&lt;/code&gt; 文件所在目录的。否则，模式还会匹配 &lt;code&gt;.gitignore&lt;/code&gt; 文件所在目录的任意层次的子目录。&lt;/li&gt;
+&lt;li&gt;如果匹配模式末尾存在 &lt;code&gt;/&lt;/code&gt;，则模式匹配只会匹配目录。否则，模式会匹配目录和文件。&lt;/li&gt;
+&lt;li&gt;举例说明，&lt;code&gt;doc/frotz/&lt;/code&gt; 会匹配 &lt;code&gt;doc/frotz&lt;/code&gt; 目录，但不会匹配 &lt;code&gt;a/doc/frotz&lt;/code&gt; 目录；但是，&lt;code&gt;frotz/&lt;/code&gt; 会匹配 &lt;code&gt;frotz&lt;/code&gt;，&lt;code&gt;a/frotz&lt;/code&gt; 等相对于 &lt;code&gt;.gitignore&lt;/code&gt; 文件的所有能匹配的目录。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; 能匹配除 &lt;code&gt;/&lt;/code&gt; 之外的任何东西。&lt;code&gt;?&lt;/code&gt; 能匹配除 &lt;code&gt;/&lt;/code&gt; 之外的任意单个字符。区间模式（如 &lt;code&gt;[a-zA-Z&lt;/code&gt;）能匹配在区间内的单个字符。&lt;/li&gt;
+&lt;li&gt;连续星号（&lt;code&gt;**&lt;/code&gt;）对匹配路径名有特殊含义：
+&lt;ul&gt;
+&lt;li&gt;以 &lt;code&gt;**&lt;/code&gt; 开头，紧跟着 &lt;code&gt;/&lt;/code&gt; 匹配所有目录。例如，&lt;code&gt;**/foo&lt;/code&gt; 匹配任意位置的 &lt;code&gt;foo&lt;/code&gt; 目录或文件，跟 &lt;code&gt;foo&lt;/code&gt; 模式一样；&lt;code&gt;**/foo/bar&lt;/code&gt; 匹配任意位置在 &lt;code&gt;foo&lt;/code&gt; 目录直接包含的 &lt;code&gt;bar&lt;/code&gt; 文件或目录。&lt;/li&gt;
+&lt;li&gt;以 &lt;code&gt;**&lt;/code&gt; 结尾，匹配里面的所有文件或目录。例如，&lt;code&gt;abc/**&lt;/code&gt; 匹配相对于 &lt;code&gt;.gitignore&lt;/code&gt; 文件的 &lt;code&gt;abc&lt;/code&gt; 目录下的所有文件或目录，不限深度。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; 后面紧跟着 &lt;code&gt;**&lt;/code&gt; 后面再跟 &lt;code&gt;/&lt;/code&gt; 匹配零个或多个目录。例如，&lt;code&gt;a/**/b&lt;/code&gt; 匹配 &lt;code&gt;a/b&lt;/code&gt;，&lt;code&gt;a/x/b&lt;/code&gt;，&lt;code&gt;a/x/y/b&lt;/code&gt;，等等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;举例&#34;&gt;举例&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hello.*&lt;/code&gt; 匹配任何以 &lt;code&gt;hello.&lt;/code&gt; 开头的文件或目录。如果要限制子目录匹配，可以在前面加上 &lt;code&gt;/&lt;/code&gt;，如 &lt;code&gt;/hello.*&lt;/code&gt;，现在该模式能匹配 &lt;code&gt;hello.txt&lt;/code&gt;，&lt;code&gt;hello.c&lt;/code&gt;，但不能匹配 &lt;code&gt;a/hello.java&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foo/&lt;/code&gt; 可以匹配任意层次的 &lt;code&gt;foo&lt;/code&gt; 目录，但是不能匹配 &lt;code&gt;foo&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;doc/frotz&lt;/code&gt; 和 &lt;code&gt;/doc/frotz&lt;/code&gt; 匹配效果相同，换句话说，如果模式中间有 &lt;code&gt;/&lt;/code&gt;，则开头的 &lt;code&gt;/&lt;/code&gt; 不是必须的。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foo/*&lt;/code&gt; 可以匹配 &lt;code&gt;foo/test.json&lt;/code&gt;（一个文件），&lt;code&gt;foo/bar&lt;/code&gt;（一个目录），但不会匹配 &lt;code&gt;foo/bar/hello.c&lt;/code&gt;，因为单个 &lt;code&gt;*&lt;/code&gt; 不会匹配带有 &lt;code&gt;/&lt;/code&gt; 的路径。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用命令&#34;&gt;常用命令&lt;/h2&gt;
+&lt;h3 id=&#34;新建检出仓库&#34;&gt;新建/检出仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;新建本地仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git init &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;project-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;检出仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git clone &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;url&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;编辑提交&#34;&gt;编辑提交&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;列出所有文件变化（新建或修改），查看仓库状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示未暂存文件的改动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示暂存区文件与最近版本的区别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff --staged
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;添加文件到暂存区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git add &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+$ git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;取消暂存，但保持文件内容不变&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;将暂存区内容提交到当前分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[descriptive message]&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注释可以通过单引号来换行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;gt; 1.提交内容
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;gt; 2.注释文本
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;gt; &amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git add&lt;/code&gt; 和 &lt;code&gt;git commit&lt;/code&gt; 可以合在一起写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git commit -am &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;代码提交注释&amp;#34;&lt;/span&gt;
+$ git commit -a -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;代码提交注释&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;操作分支&#34;&gt;操作分支&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;列出所有本地分支（前面有 &lt;code&gt;*&lt;/code&gt; 的为当前分支）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看远程分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -r
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看所有分支（本地 + 远程）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建新分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;切换到指定分支并更新工作目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git checkout &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建并切换分支快捷命令（相当于上面两个命令的合体）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git checkout -b &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;修改分支名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -m &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;old-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;new-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;切换回主分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git checkout master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;合并指定分支到当前分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git merge &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;合并分支时，Git 会默认用 Fast forward 模式，此模式下，删除分支后，会丢掉分支信息；而且当所有分支都有改动时，容易出错，建议添加 &lt;code&gt;--no-ff&lt;/code&gt; 参数，禁用 Fast forward 模式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;合并分支时，加上 &lt;code&gt;--no-ff&lt;/code&gt; 参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而 Fast forward 合并就看不出来曾经做过合并。合并时要创建一个新的 commit，所以加上 &lt;code&gt;-m&lt;/code&gt; 参数，把 commit 描述写进去。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git merge --no-ff -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;merge with --no-ff&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除指定分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -d &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;强行删除指定分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -D &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;重构文件&#34;&gt;重构文件&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Relocate and remove versioned files&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;从工作目录删除文件并暂存此删除操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git rm &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;从版本控制系统删除文件但保留对应本地文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git rm --cached &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;修改文件名并准备提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git mv &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file-original&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file-renamed&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;排除gitignore&#34;&gt;排除（&lt;code&gt;.gitignore&lt;/code&gt;）&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Exclude temporary files and paths&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;列出当前项目所有排除文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git ls-files --other --ignored --exclude-standard
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;保存工作现场&#34;&gt;保存工作现场&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;存储&lt;/em&gt;当前工作现场，等以后恢复现场后继续工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;恢复&lt;em&gt;存储&lt;/em&gt;的工作现场，恢复的同时把 stash 内容也删掉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash pop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看&lt;em&gt;存储&lt;/em&gt;的工作现场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;可以多次 &lt;code&gt;stash&lt;/code&gt;，恢复的时候，先用 &lt;code&gt;git stash list&lt;/code&gt; 查看，然后恢复指定的stash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash apply stash@&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;丢弃最近&lt;em&gt;存储&lt;/em&gt;的工作现场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash drop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;检查历史&#34;&gt;检查历史&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;列出当前分支版本历史&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;列出文件版本历史，包含重命名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --follow &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;log 输出信息压缩命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --pretty&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;oneline
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看指定文件版本库日志&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log  &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;filename&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看分支合并图&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --graph
+$ git log --graph --pretty&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;oneline --abbrev-commit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看 log 参数的更多信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看分支间的差异&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;first-branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;...&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;second-branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看分支之间的差异。在合并改动之前，你可以使用如下命令预览差异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;source-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;target-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;输出特定提交的元数据和修改的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git show &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看HEAD的移动历史&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reflog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;版本回退&#34;&gt;版本回退&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;撤回所有提交，但保留本地改动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;丢弃所有历史和修改并回到特定提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到当前版本，放弃所有没有提交的修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到上个版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到上上个版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD^^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到往上的第6个版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD~6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到指定版本号的版本（&lt;code&gt;3628164&lt;/code&gt; 这段数字是 commit id，也就是所谓的版本号，它是一大串字符串的前几位，我们没必要把一整串 commit id 都写出来）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard &lt;span style=&#34;color:#ae81ff&#34;&gt;3628164&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;同步修改&#34;&gt;同步修改&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Downloads all history from the repository bookmark&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git fetch &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bookmark&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Combines bookmark’s branch into current local branch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git merge &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bookmark&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Uploads all local branch commits to GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;alias&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Downloads bookmark history and incorporates changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;远程仓库&#34;&gt;远程仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;关联一个远程仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git remote add origin &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;url&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;第一次推送 &lt;code&gt;master&lt;/code&gt; 分支的所有内容，使用 &lt;code&gt;-u&lt;/code&gt; 参数，Git 不但会把本地的 &lt;code&gt;master&lt;/code&gt; 分支内容推送的远程新的 &lt;code&gt;master&lt;/code&gt; 分支，还会把本地的 &lt;code&gt;master&lt;/code&gt; 分支和远程的 &lt;code&gt;master&lt;/code&gt; 分支关联起来。此后，每次本地提交后，只要有必要，就可以使用命令 &lt;code&gt;git push origin master&lt;/code&gt; 推送最新修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;推送最新修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;除非你将分支推送到远端仓库，不然他人就看不到该分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看远程仓库地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git remote -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;标签&#34;&gt;标签&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;查看所有标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;切换到需要打标签的分支上，使用下面命令就可以打一个新标签（标签是默认打在最新提交的 commit 上的）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;打标签到指定的 commit 上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit-id&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看标签信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git show &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建带有说明的标签。&lt;code&gt;-a&lt;/code&gt;：指定标签名，&lt;code&gt;-m&lt;/code&gt;：指定说明文字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag -a &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag description&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit-id&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除本地标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag -d &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;推送指定标签到远程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;推送全部尚未推送到远程的本地标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin --tags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除指定远程标签（在删除远程标签之前，要先从本地删除）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin :refs/tags/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Spring Security</title>
+      <link>https://wangxinping.github.io/post/welcome-to-spring-security/</link>
+      <pubDate>Thu, 17 Oct 2019 20:04:51 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-spring-security/</guid>
+      <description>&lt;h2 id=&#34;配置步骤&#34;&gt;配置步骤&lt;/h2&gt;
+&lt;h3 id=&#34;1-pom&#34;&gt;1. pom&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependencies&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.security&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-security-web&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.security&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-security-config&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.thymeleaf.extras&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;thymeleaf-extras-springsecurity4&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-配置websecurityconfigureradapterspringsecurty核心配置文件&#34;&gt;2. 配置WebSecurityConfigurerAdapter，SpringSecurty核心配置文件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; tools.perkinelmer.Config&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.context.annotation.Bean&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.context.annotation.Configuration&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.config.annotation.web.builders.HttpSecurity&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.config.annotation.web.builders.WebSecurity&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.config.annotation.web.configuration.EnableWebSecurity&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UserDetailsService&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.security.CustomUserService&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;@Configuration&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;@EnableWebSecurity&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;WebSecurityConfig&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; WebSecurityConfigurerAdapter &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Bean&lt;/span&gt;
+    UserDetailsService &lt;span style=&#34;color:#a6e22e&#34;&gt;customUserService&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(){&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//注册UserDetailsService 的bean
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; CustomUserService&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AuthenticationManagerBuilder auth&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; Exception &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        auth&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;userDetailsService&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;customUserService&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//user Details Service验证
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;HttpSecurity http&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; Exception &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        http&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;authorizeRequests&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;anyRequest&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;authenticated&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//任何请求,登录后可以访问
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;and&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;formLogin&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;loginPage&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/login&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;defaultSuccessUrl&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;failureUrl&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/login?error&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;permitAll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//登录页面用户任意访问
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;and&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;headers&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;frameOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;disable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;and&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;permitAll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//注销行为任意访问
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;WebSecurity web&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; Exception &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#75715e&#34;&gt;//解决静态资源被拦截的问题
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        web&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ignoring&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;antMatchers&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/**/*.js&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/**/*.css&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/**/*.jpg&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/**/*.png&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-配置mvc主要作用添加登录页面主页面页面映射从而达到通过配置文件配置就能使thymeleaf从后台出来内部应用起作用&#34;&gt;3. 配置MVC,主要作用添加登录页面，主页面，页面映射，从而达到通过配置文件配置就能使thymeleaf从后台出来，内部应用起作用&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; tools.perkinelmer.Config&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.context.annotation.Configuration&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.web.servlet.config.annotation.ViewControllerRegistry&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;@Configuration&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;WebMvcConfig&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; WebMvcConfigurerAdapter &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;addViewControllers&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ViewControllerRegistry registry&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        registry&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addViewController&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/login&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setViewName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;login/login&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        registry&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addViewController&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setViewName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main/main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;4-配置用户角色并将权限交给springsceurity来处理&#34;&gt;4. 配置用户，角色，并将权限交给SpringSceurity来处理&lt;/h3&gt;
+&lt;h4 id=&#34;sysrole&#34;&gt;SysRole&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; tools.perkinelmer.entity&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;SysRole&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; Integer id&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; String name&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; Integer &lt;span style=&#34;color:#a6e22e&#34;&gt;getId&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; id&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setId&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Integer id&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; id&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; String &lt;span style=&#34;color:#a6e22e&#34;&gt;getName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; name&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String name&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; name&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;sysuser&#34;&gt;SysUser&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; tools.perkinelmer.entity&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.List&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;SysUser&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; Integer id&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; String username&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; Integer &lt;span style=&#34;color:#a6e22e&#34;&gt;getId&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; id&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setId&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Integer id&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; id&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; String &lt;span style=&#34;color:#a6e22e&#34;&gt;getUsername&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; username&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setUsername&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String username&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; username&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; String &lt;span style=&#34;color:#a6e22e&#34;&gt;getPassword&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; password&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setPassword&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String password&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; password&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;SysRole&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getRoles&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; roles&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setRoles&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;SysRole&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; roles&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;roles&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; roles&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; String password&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;SysRole&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; roles&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;自定义userdetailsservice让权限控制交给springsecrity&#34;&gt;自定义UserDetailsService让权限控制交给springSecrity&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; tools.perkinelmer.security&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.List&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.beans.factory.annotation.Autowired&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.authority.SimpleGrantedAuthority&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UserDetails&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UserDetailsService&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UsernameNotFoundException&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.Mapper.UserMapper&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.entity.SysRole&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.entity.SysUser&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * 用于将用户权限交给 springsecurity 进行管控
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CustomUserService&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;implements&lt;/span&gt; UserDetailsService&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Autowired&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; UserMapper userMapper&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; UserDetails &lt;span style=&#34;color:#a6e22e&#34;&gt;loadUserByUsername&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String username&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; UsernameNotFoundException &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        SysUser user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; userMapper&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findByUserName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;user &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; UsernameNotFoundException&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;用户名不存在&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;SimpleGrantedAuthority&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; authorities &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;
+        &lt;span style=&#34;color:#75715e&#34;&gt;//用于添加用户的权限。只要把用户权限添加到authorities 就万事大吉。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;SysRole role&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getRoles&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;())&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            authorities&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; SimpleGrantedAuthority&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;role&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()));&lt;/span&gt;
+            System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;role&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; org&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;springframework&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;security&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;core&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;userdetails&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getUsername&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(),&lt;/span&gt;
+                user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getPassword&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(),&lt;/span&gt; authorities&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5-相关页面&#34;&gt;5. 相关页面&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;写好配置文件指定的登录页面，如果不指定的话springSecurty有自己默认的，登录成功后写好指定的主页，这里都需要用thymeleaf模板来做，这样权限控制可以有
+sec:authorize=&amp;quot;hasRole(&amp;lsquo;ROLE_ADMIN&amp;rsquo;)&amp;ldquo;来控制哪些元素显示与否，用户是否有权限访问
+权限名称需要是ROLE_开头的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;6-springsercity配置需要注意点&#34;&gt;6. SpringSercity配置需要注意点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;首先当我们要自定义Spring Security的时候我们需要继承自&lt;code&gt;WebSecurityConfigurerAdapter&lt;/code&gt;来完成，相关配置重写对应 方法即可。&lt;/li&gt;
+&lt;li&gt;我们在这里注册CustomUserService的Bean，然后通过重写configure方法添加我们自定义的认证方式。&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;configure(HttpSecurity http)&lt;/code&gt;方法中，我们设置了登录页面，而且登录页面任何人都可以访问，然后设置了登录失败地址，也设置了注销请求，注销请求也是任何人都可以访问的。&lt;/li&gt;
+&lt;li&gt;permitAll表示该请求任何人都可以访问，&lt;code&gt;.anyRequest().authenticated()&lt;/code&gt;,表示其他的请求都必须要有权限认证。&lt;/li&gt;
+&lt;li&gt;这里我们可以通过匹配器来匹配路径，比如antMatchers方法，假设我要管理员才可以访问admin文件夹下的内容，我可以这样来写：&lt;code&gt;.antMatchers(&amp;quot;/admin/**&amp;quot;).hasRole(&amp;quot;ROLE_ADMIN&amp;quot;)&lt;/code&gt;，也可以设置admin文件夹下的文件可以有多个角色来访问，写法如下：&lt;code&gt;.antMatchers(&amp;quot;/admin/**&amp;quot;).hasAnyRole(&amp;quot;ROLE_ADMIN&amp;quot;,&amp;quot;ROLE_USER&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可以通过&lt;code&gt;hasIpAddress&lt;/code&gt;来指定某一个ip可以访问该资源,假设只允许访问ip为&lt;code&gt;210.210.210.210&lt;/code&gt;的请求获取admin下的资源，写法如下&lt;code&gt;.antMatchers(&amp;quot;/admin/**&amp;quot;).hasIpAddress(&amp;quot;210.210.210.210&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;更多的权限控制方式参看下表：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;./spring-security-1.png&#34; alt=&#34;spring security&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分析理解&#34;&gt;分析理解&lt;/h2&gt;
+&lt;h3 id=&#34;1-springsecurity运行机制&#34;&gt;1. SpringSecurity运行机制&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;被认证请求被&lt;code&gt;FilterSecurityInterceptor&lt;/code&gt;拦截看有没有对应权限，如果没有抛异常给&lt;code&gt;ExceptionTranslationFilter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ExceptionTranslationFilter&lt;/code&gt;缓存原请求，利用&lt;code&gt;LoginUrlAuthenticationEntryPoint&lt;/code&gt;入口跳转到登录界面&lt;/li&gt;
+&lt;li&gt;用户在登录界面填写登录信息后，提交，经过&lt;code&gt;UsernamePasswordAuthenticationFilter&lt;/code&gt;对填写的信息和从数据源中获取的信息进行对比，成功则授权权限，并通过登录成功后入口&lt;code&gt;SavedRequestAwareAuthenticationSuccessHandler&lt;/code&gt;跳转回原请求页面（跳转时有从缓存中对请求信息的恢复）&lt;/li&gt;
+&lt;li&gt;登录完成后返回原请求，由&lt;code&gt;FilterSecurityInterceptor&lt;/code&gt;进行权限的验证（大部分工作有&lt;code&gt;AbstractSecurityInterceptor&lt;/code&gt;来做），根据登录成功后生成的&lt;code&gt;Authentication（Authentication authentication = SecurityContextHolder.getContext().getAuthentication();&lt;/code&gt;由&lt;code&gt;SecurityContextHolder&lt;/code&gt;持有，而其中的&lt;code&gt;SecurityContext&lt;/code&gt;由&lt;code&gt;SecurityContextPersistentFilter&lt;/code&gt;保存到session中从而实现request共享）中的权限和请求所需的权限对比，如果一致则成功执行，如果权限不正确则返回403错误码&lt;/li&gt;
+&lt;li&gt;以上均是默认情况下，没有经过配置的执行过程，当然可以自定义&lt;code&gt;LoginUrlAuthenticationEntryPoint&lt;/code&gt;和&lt;code&gt;SavedRequestAwareAuthenticationSuccessHandler&lt;/code&gt;实现根据不同的请求所需权限跳转到不同登录页面及授权成功后根据权限跳转到不同页面，以及返回403错误码时跳转到对应的页面（AccessDeniedHandlerImpl）在下一篇中会对其进行实现&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-根据这个机制我们可以做的事&#34;&gt;2. 根据这个机制我们可以做的事&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;自定义&lt;code&gt;LoginUrlAuthenticationEntryPoint&lt;/code&gt;实现跳转到不同登录页，如用户订单请求跳转到用户登录页，管理中心请求跳转到管理员登录页&lt;/li&gt;
+&lt;li&gt;自定义&lt;code&gt;SavedRequestAwareAuthenticationSuccessHandler&lt;/code&gt;实现直接点击登录成功后跳转到指定的页，如用户登录后跳转到首页，管理员登陆后跳转到管理中心&lt;/li&gt;
+&lt;li&gt;通过&lt;code&gt;AccessDeniedHandlerImpl&lt;/code&gt;处理虽让登录成功确没有访问权限的问题&lt;/li&gt;
+&lt;li&gt;自定义&lt;code&gt;SimpleUrlAuthenticationFailureHandler&lt;/code&gt;来实现登录失败的情况，主要是用户不存在或密码错误问题。这种情况下能够实现从哪个登录页面过来的还是返回原登录页，并携带错误信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SimpleUrlAuthenticationSuccessHandler&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-thymeleaf&#34;&gt;3. thymeleaf&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个模板使用必须是通过后台获得内部组件才能与java代码融合起作用，这里我们需要注意的地方是需要通过后台访问的页面都要 用WebMvcConfigurerAdapter配置下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@Configuration&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;WebMvcConfig&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; WebMvcConfigurerAdapter &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;addViewControllers&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ViewControllerRegistry registry&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        registry&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addViewController&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/login&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setViewName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;login/login&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        registry&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addViewController&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setViewName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main/main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;4-角色权限控制&#34;&gt;4. 角色权限控制&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;springsecurity的角色权限控制，可通过配置角色组来作为角色，原来的角色作为权限，之后这个权限选项就可以作为控制页面元素显示，指定url访问的控制元素&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; tools.perkinelmer.security&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.List&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.beans.factory.annotation.Autowired&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.authority.SimpleGrantedAuthority&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UserDetails&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UserDetailsService&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.springframework.security.core.userdetails.UsernameNotFoundException&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.Mapper.UserMapper&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.entity.SysAuthority&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.entity.SysRole&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tools.perkinelmer.entity.SysUser&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * 用于将用户权限交给 springsecurity 进行管控
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; *
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CustomUserService&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;implements&lt;/span&gt; UserDetailsService&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Autowired&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; UserMapper userMapper&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; UserDetails &lt;span style=&#34;color:#a6e22e&#34;&gt;loadUserByUsername&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String username&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; UsernameNotFoundException &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        SysUser user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; userMapper&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findByUserName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;user &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; UsernameNotFoundException&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;用户名不存在&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;SimpleGrantedAuthority&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; authorities &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;
+        &lt;span style=&#34;color:#75715e&#34;&gt;//用于添加用户的权限。只要把用户权限添加到authorities 就万事大吉。
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;SysRole role&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getRoles&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;())&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; 
+            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;SysAuthority&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; authoritys &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; role&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getAuthoritys&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;SysAuthority authority&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;authoritys&lt;span style=&#34;color:#f92672&#34;&gt;){&lt;/span&gt;
+                authorities&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; SimpleGrantedAuthority&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ROLE_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;authority&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getAuthority_id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;toString&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()));&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; org&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;springframework&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;security&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;core&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;userdetails&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getUsername&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(),&lt;/span&gt;
+                user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getPassword&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(),&lt;/span&gt; authorities&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Welcome to MySQL</title>
+      <link>https://wangxinping.github.io/post/welcome-to-mysql/</link>
+      <pubDate>Thu, 17 Oct 2019 18:56:11 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-mysql/</guid>
+      <description>&lt;h2 id=&#34;centos-7-使用-mariadb-代替-mysql&#34;&gt;CentOS 7 使用 MariaDB 代替 MYSQL&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文记录在 CentOS 7 中使用 MySQL/MariaDB 的一些用法和一些要注意的事情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;安装-mariadb&#34;&gt;安装 MariaDB&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;安装MariaDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ yum install mariadb mariadb-server mariadb-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;启动MariaDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ systemctl start mariadb  &lt;span style=&#34;color:#75715e&#34;&gt;# 或者&lt;/span&gt;
+$ service mariadb start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;设置开机启动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ systemctl enable mariadb  &lt;span style=&#34;color:#75715e&#34;&gt;# 或者&lt;/span&gt;
+$ chkconfig mariadb on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;接下来进行MariaDB的相关简单配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql_secure_installation
+&lt;span style=&#34;color:#75715e&#34;&gt;# 首先是设置密码，会提示先输入密码&lt;/span&gt;
+Enter current password &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; root &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;enter &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; none&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:&amp;lt;–初次运行直接回车
+&lt;span style=&#34;color:#75715e&#34;&gt;# 设置密码&lt;/span&gt;
+Set root password? &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Y/n&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &amp;lt;– 是否设置root用户密码，输入y回车或直接回车
+New password: &amp;lt;– 设置root用户的密码
+Re-enter new password: &amp;lt;– 再输入一次你设置的密码
+&lt;span style=&#34;color:#75715e&#34;&gt;# 其他配置&lt;/span&gt;
+Remove anonymous users? &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Y/n&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &amp;lt;– 是否删除匿名用户
+Disallow root login remotely? &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Y/n&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &amp;lt;–是否禁止root远程登录
+Remove test database and access to it? &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Y/n&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &amp;lt;– 是否删除test数据库
+Reload privilege tables now? &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Y/n&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &amp;lt;– 是否重新加载权限表
+&lt;span style=&#34;color:#75715e&#34;&gt;# 初始化MariaDB完成，接下来测试登录`mysql -uroot -ppassword`&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# 完成&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置-mariadb-的字符集utf8或utf8mb4&#34;&gt;配置 MariaDB 的字符集(utf8或utf8mb4)&lt;/h3&gt;
+&lt;p&gt;文件&lt;code&gt;/etc/my.cnf&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ vi /etc/my.cnf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;[mysqld]&lt;/code&gt;标签下添加&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;init_connect=&#39;SET collation_connection = utf8_general_ci&#39;
+init_connect=&#39;SET NAMES utf8&#39;
+character-set-server=utf8
+collation-server=utf8_general_ci
+skip-character-set-client-handshake
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件&lt;code&gt;/etc/my.cnf.d/client.cnf&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ vi /etc/my.cnf.d/client.cnf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;[client]&lt;/code&gt;中添加&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;default-character-set=utf8
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件&lt;code&gt;/etc/my.cnf.d/mysql-clients.cnf&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ vi /etc/my.cnf.d/mysql-clients.cnf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;[mysql]&lt;/code&gt;中添加&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;default-character-set=utf8
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;全部配置完成，重启 mariadb&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ systemctl restart mariadb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后进入MariaDB查看字符集&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; variables &lt;span style=&#34;color:#66d9ef&#34;&gt;like&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%character%&amp;#34;&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; variables &lt;span style=&#34;color:#66d9ef&#34;&gt;like&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%collation%&amp;#34;&lt;/span&gt;;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--------------------------+----------------------------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Variable_name            &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Value                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--------------------------+----------------------------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_client    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_connection &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_database  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_filesystem &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; binary                    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_results    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_server    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_set_system    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8                      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; character_sets_dir      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;usr&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;share&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;charsets&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--------------------------+----------------------------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;rows&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.&lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt; sec)
+
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;----------------------+-----------------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Variable_name        &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Value          &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;----------------------+-----------------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; collation_connection &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8_general_ci &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; collation_database  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8_general_ci &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; collation_server    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; utf8_general_ci &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;----------------------+-----------------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;rows&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.&lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt; sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;字符集配置完成。&lt;/p&gt;
+&lt;h3 id=&#34;添加用户设置权限&#34;&gt;添加用户，设置权限&lt;/h3&gt;
+&lt;p&gt;创建用户&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt; username&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;localhost identified &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接创建用户并授权&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;grant&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;on&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;to&lt;/span&gt; username&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;localhost identified &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;授予外网登陆权限&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;grant&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;on&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;to&lt;/span&gt; username&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; identified &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;授予权限并且可以授权&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;grant&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;on&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;to&lt;/span&gt; username&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hostname&amp;#39;&lt;/span&gt; identified &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;grant&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;option&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;简单的用户和权限配置基本就这样了。&lt;/p&gt;
+&lt;p&gt;如果只授予部分权限可以将其中&lt;code&gt;all privileges&lt;/code&gt;或者&lt;code&gt;all&lt;/code&gt;改为&lt;code&gt;select,insert,update,delete,create,drop,index,alter,grant,references,reload,shutdown,process,file&lt;/code&gt;其中一部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;mysql-远程连接&#34;&gt;MYSQL 远程连接&lt;/h3&gt;
+&lt;p&gt;MySQL 默认只支持本地的连接，如果需要远程连接可以修改 mysql 库下的 user 表的l ocalhost 为 % 即可，然后刷新配置信息&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;将&lt;/span&gt;host设置为&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表示任何&lt;/span&gt;ip都能连接mysql&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;，当然您也可以将&lt;/span&gt;host指定为某个ip
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;update&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;host&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;host&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;;
+&lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;刷新权限表，使配置生效&lt;/span&gt;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; flush &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;mysql-创建用户与授权&#34;&gt;MySQL 创建用户与授权&lt;/h2&gt;
+&lt;h3 id=&#34;创建用户&#34;&gt;创建用户&lt;/h3&gt;
+&lt;p&gt;命令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt; IDENTIFIED &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;username：你将创建的用户名&lt;/li&gt;
+&lt;li&gt;host：指定该用户在哪个主机上可以登陆，如果是本地用户可用localhost，如果想让该用户可以从任意远程主机登陆，可以使用通配符%&lt;/li&gt;
+&lt;li&gt;password：该用户的登陆密码，密码可以为空，如果为空则该用户可以不需要密码登陆服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例子：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dog&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt; IDENTIFIED &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;192.168.1.101_&amp;#39;&lt;/span&gt; IDENDIFIED &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; IDENTIFIED &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; IDENTIFIED &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;授权&#34;&gt;授权&lt;/h3&gt;
+&lt;p&gt;命令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GRANT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; databasename.tablename &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;说明:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;privileges：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL&lt;/li&gt;
+&lt;li&gt;databasename：数据库名&lt;/li&gt;
+&lt;li&gt;tablename：表名，如果要授予该用户对所有数据库和表的相应操作权限则可用&lt;code&gt;*&lt;/code&gt;表示，如&lt;code&gt;*.*&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例子:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GRANT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;INSERT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; test.&lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GRANT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ALL&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GRANT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ALL&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; maindataplus.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意: 用以上命令授权的用户不能给其它用户授权，如果想让该用户可以授权，用以下命令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GRANT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; databasename.tablename &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;WITH&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GRANT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;OPTION&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;设置与更改用户密码&#34;&gt;设置与更改用户密码&lt;/h3&gt;
+&lt;p&gt;命令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; PASSWORD &lt;span style=&#34;color:#66d9ef&#34;&gt;FOR&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; PASSWORD(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;newpassword&amp;#39;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果是当前登陆用户用：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; PASSWORD &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; PASSWORD(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;newpassword&amp;#34;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;例子:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; PASSWORD &lt;span style=&#34;color:#66d9ef&#34;&gt;FOR&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; PASSWORD(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;123456&amp;#34;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;撤销用户权限&#34;&gt;撤销用户权限&lt;/h3&gt;
+&lt;p&gt;命令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;REVOKE&lt;/span&gt; privilege &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; databasename.tablename &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;说明: &lt;code&gt;privilege, databasename, tablename&lt;/code&gt;：同授权部分&lt;/p&gt;
+&lt;p&gt;例子:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;REVOKE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pig&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意: 假如你在给用户&lt;code&gt;&#39;pig&#39;@&#39;%&#39;&lt;/code&gt;授权的时候是这样的（或类似的）：&lt;code&gt;GRANT SELECT ON test.user TO &#39;pig&#39;@&#39;%&#39;&lt;/code&gt;，则在使用&lt;code&gt;REVOKE SELECT ON *.* FROM &#39;pig&#39;@&#39;%&#39;;&lt;/code&gt;命令并不能撤销该用户对&lt;code&gt;test&lt;/code&gt;数据库中&lt;code&gt;user&lt;/code&gt;表的&lt;code&gt;SELECT&lt;/code&gt;操作。相反，如果授权使用的是&lt;code&gt;GRANT SELECT ON *.* TO &#39;pig&#39;@&#39;%&#39;;&lt;/code&gt;则&lt;code&gt;REVOKE SELECT ON test.user FROM &#39;pig&#39;@&#39;%&#39;;&lt;/code&gt;命令也不能撤销该用户对 test 数据库中 user 表的 Select 权限。具体信息可以用命令&lt;code&gt;SHOW GRANTS FOR &#39;pig&#39;@&#39;%&#39;;&lt;/code&gt;查看。&lt;/p&gt;
+&lt;h3 id=&#34;删除用户&#34;&gt;删除用户&lt;/h3&gt;
+&lt;p&gt;命令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DROP&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;mysql-数据库使用总结&#34;&gt;mysql 数据库使用总结&lt;/h2&gt;
+&lt;h3 id=&#34;修改用户密码以root为例&#34;&gt;修改用户密码，以root为例&lt;/h3&gt;
+&lt;h4 id=&#34;知道root密码需要修改&#34;&gt;知道root密码，需要修改&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;方法a. 登入数据库来修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -uroot -p /*输入密码进入*/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/* 第一个方式：直接编辑数据库字段 */&lt;/span&gt;
+MariaDB [(&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;)]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; use mysql;
+MariaDB [mysql]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;UPDATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; password&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;password(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;newpassword&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt;;
+MariaDB [mysql]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; flush &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt;;
+MariaDB [mysql]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; exit
+&lt;span style=&#34;color:#75715e&#34;&gt;/* 第二个方式：修改密码，不用进入mysql */&lt;/span&gt;
+MariaDB [(&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;)]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; password &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;password(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;newpassword&amp;#39;&lt;/span&gt;);
+MariaDB [(&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;)]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; exit;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;方法b. 使用 mysqladmin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 这样做不好的地方在于密码都在命令行给明文显示出来了&lt;/span&gt;
+$ mysqladmin -uroot -poldpassword password newpassword  &lt;span style=&#34;color:#75715e&#34;&gt;# 或者&lt;/span&gt;
+$ mysqladmin -uroot -p password newpassword
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;忘记-root-密码需要重置&#34;&gt;忘记 root 密码，需要重置&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ systemctl stop mariadb  &lt;span style=&#34;color:#75715e&#34;&gt;# 先停掉当前的mysql进程，不然执行下一步说进程已经存在&lt;/span&gt;
+$ mysqld_safe --skip-grant-tables &amp;amp;  &lt;span style=&#34;color:#75715e&#34;&gt;# 后台直接这个mysql，界面中还会出现日志，直接ctrl+c进入命令行输入&lt;/span&gt;
+$ ps -ef | grep mariadb  &lt;span style=&#34;color:#75715e&#34;&gt;# 看进程，会突出显示--skip-grant-tables&lt;/span&gt;
+  mysql     &lt;span style=&#34;color:#ae81ff&#34;&gt;3607&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3368&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; 18:05 pts/0    00:00:00 /usr/libexec/mysqld --basedir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr --datadir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/lib/mysql
+  --plugin-dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr/lib64/mysql/plugin --user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mysql --skip-grant-tables --log-error&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/log/mariadb/mariadb.log
+  --pid-file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/run/mariadb/mariadb.pid --socket&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/lib/mysql/mysql.sock
+$ mysql  &lt;span style=&#34;color:#75715e&#34;&gt;# 直接进入mysql，不需要密码等，执行第一步中方法a里两种方式中任何一种即可&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;MariaDB [(&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;)]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; use mysql;
+MariaDB [mysql]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;UPDATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; password&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;password(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;newpassword&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt;;
+MariaDB [mysql]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; flush &lt;span style=&#34;color:#66d9ef&#34;&gt;privileges&lt;/span&gt;; 
+MariaDB [mysql]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; exit; &lt;span style=&#34;color:#75715e&#34;&gt;/* 这个时候用参数--skip-grant-tables启动的mysql已经会要求输入密码才能进入了 */&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ pkill mysql  &lt;span style=&#34;color:#75715e&#34;&gt;# 用pkill来杀,kill不死，kill之后自动起来一个&lt;/span&gt;
+$ systemctl start mariadb  &lt;span style=&#34;color:#75715e&#34;&gt;# 启动正常的mysql&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;更改-mysql-参数以-max_allowed_packet-为例&#34;&gt;更改 mysql 参数，以 max_allowed_packet 为例&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;方法1. 编辑配置文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ vim /etc/my.cnf
+max_allowed_packet&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;20M
+max_connections &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;
+$ systemctl restart mariadb  &lt;span style=&#34;color:#75715e&#34;&gt;# 重启生效&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;方法2. 登入数据库来设置，不过重启就会复原，推荐直接用上面的更改配置文件的方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;MariaDB [(&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;)]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; variables &lt;span style=&#34;color:#66d9ef&#34;&gt;like&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;max_allowed_packet&amp;#39;&lt;/span&gt;;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--------------------+---------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Variable_name      &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Value   &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--------------------+---------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; max_allowed_packet &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1048576&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--------------------+---------+
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;row&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.&lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt; sec)
+MariaDB [(&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;)]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;global&lt;/span&gt; max_allowed_packet &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;/*把query最大运行包大小从默认的1M调整为20M*/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;本文主要记录一些-mysql-日常使用的命令供以后查询&#34;&gt;本文主要记录一些 mysql 日常使用的命令，供以后查询。&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;更改root密码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysqladmin -uroot password &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourpassword&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;本地登录mysql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -uroot -ppassword
+$ mysql -uroot -p  &lt;span style=&#34;color:#75715e&#34;&gt;# 输入密码&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;远程登陆mysql服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -uroot -p -h192.168.137.10 -P3306
+$ mysql &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-h hostname&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-u username&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查询数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; databases;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;进入某个数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; use databasename;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;列出数据库中的表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; tables;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看某个表全部字段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;desc&lt;/span&gt; slow_log;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; slow_log&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;G&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;不仅可以显示表信息，还可以显示建表语句&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看当前用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看当前所在数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;database&lt;/span&gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建新数据库（可以指定字符集）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;database&lt;/span&gt; db1 charset utf8;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建数据库(mysql:sql create database新建utf8mb4数据库)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;database&lt;/span&gt; db2 &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; character &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; utf8mb4 &lt;span style=&#34;color:#66d9ef&#34;&gt;collate&lt;/span&gt; utf8mb4_general_ci;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建新表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; t1 (&lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt;id&lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt; int(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt;name&lt;span style=&#34;color:#f92672&#34;&gt;`&lt;/span&gt; char(&lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看数据库版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;version&lt;/span&gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看数据库状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; status; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;当前会话状态&lt;/span&gt;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;global&lt;/span&gt; status; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;全局数据库状态&lt;/span&gt;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; slave status&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;G&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;查看主从数据库状态信息&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查询数据库参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; variables;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;修改数据库参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; variables &lt;span style=&#34;color:#66d9ef&#34;&gt;like&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;max_connect%&amp;#39;&lt;/span&gt;;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;global&lt;/span&gt; max_connect_errors &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;重启数据库会失效，要在配置文件中修改&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看当前数据库队列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;show&lt;/span&gt; processlist;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建普通用户并授权给某个数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;grant&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;on&lt;/span&gt; databasename.&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;user1&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt; identified &lt;span style=&#34;color:#66d9ef&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查询表数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; mysql.db; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;查询该表中的所有字段&lt;/span&gt;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; mysql.&lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;count&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;表示表中有多少行&lt;/span&gt;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; db,&lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; mysql.db; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;查询表中的多个字段&lt;/span&gt;
+mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; mysql.db &lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;host&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;like&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;10.0.%&amp;#39;&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;在查询语句中可以使用万能匹配&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;”&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;插入一行数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;insert&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;into&lt;/span&gt; db1.t1 &lt;span style=&#34;color:#66d9ef&#34;&gt;values&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;abc&amp;#39;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;更改表的某一行数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;update&lt;/span&gt; db1.t1 &lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt; name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;aaa&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;清空表数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;truncate&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; db1.t1;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt; db1.t1;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;清空数据库中的所有表（数据库名是eab12）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -N -s information_schema -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;SELECT CONCAT(&amp;#39;TRUNCATE TABLE &amp;#39;,TABLE_NAME,&amp;#39;;&amp;#39;) FROM TABLES WHERE TABLE_SCHEMA=&amp;#39;eab12&amp;#39;&amp;#34;&lt;/span&gt; | mysql -f eab12
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;database&lt;/span&gt; db1;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;数据库备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysqldump  -uroot -p&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourpassword&amp;#39;&lt;/span&gt; mysql &amp;gt;/tmp/mysql.sql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;数据库恢复&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -uroot -p&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourpassword&amp;#39;&lt;/span&gt; mysql &amp;lt;/tmp/mysql.sql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;新建普通用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;USER&lt;/span&gt; name IDENTIFIED &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ssapdrow&amp;#39;&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;更改普通用户密码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; PASSWORD &lt;span style=&#34;color:#66d9ef&#34;&gt;FOR&lt;/span&gt; name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;PASSWORD(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fdddfd&amp;#39;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看name用户权限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;mysql&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SHOW&lt;/span&gt; GRANTS &lt;span style=&#34;color:#66d9ef&#34;&gt;FOR&lt;/span&gt; name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;脚本中执行mysql命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -uuser -ppasswd -e&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;show databases&amp;#34;&lt;/span&gt;
+$ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;show databases&amp;#34;&lt;/span&gt;|mysql -uuser -ppassword
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;以下是执行大量mysql语句采用的方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ mysql -uuser -hhostname -ppasswd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;&amp;lt;EOF
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;mysql语句
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;EOF&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Vim</title>
+      <link>https://wangxinping.github.io/post/welcome-to-vim/</link>
+      <pubDate>Thu, 17 Oct 2019 18:53:05 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-vim/</guid>
+      <description>&lt;h2 id=&#34;vim-基本操作&#34;&gt;Vim 基本操作&lt;/h2&gt;
+&lt;p&gt;Vim 分为三种模式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;输入模式：这就是很普通的编辑器一样，光标在某个位置上闪烁，表示我们可以输入内容了。&lt;/li&gt;
+&lt;li&gt;普通模式：在输入模式下按下 &lt;code&gt;Esc&lt;/code&gt; 键可以退出输入模式，进入到普通模式。&lt;/li&gt;
+&lt;li&gt;命令模式：执行搜索、替换等命令或调用插件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;普通模式&lt;/strong&gt;是 Vim 的一大特色，能够进行很多操作，比如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;快速移动光标&lt;/li&gt;
+&lt;li&gt;快速替换、删除某些内容&lt;/li&gt;
+&lt;li&gt;进入输入模式或命令模式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用 &lt;code&gt;vim&lt;/code&gt; 打开文件后，默认进入普通模式，如果我们要编辑文本，可以按下 &lt;code&gt;i&lt;/code&gt; 进入编辑模式，编辑完后再按下 &lt;code&gt;Esc&lt;/code&gt; 键可以退出输入模式，进入到普通模式。&lt;/p&gt;
+&lt;p&gt;如果想退出 vim，则需要借助命令模式。按下 &lt;code&gt;:&lt;/code&gt; 并输入以下内容之一：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;q&lt;/code&gt;：退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;q!&lt;/code&gt;：如果对文件作了修改，无法用 &lt;code&gt;q&lt;/code&gt; 退出，此时 &lt;code&gt;q!&lt;/code&gt; 表示丢弃修改并退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wq&lt;/code&gt;：保存并退出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;vim-光标移动&#34;&gt;Vim 光标移动&lt;/h2&gt;
+&lt;p&gt;上一节中我们介绍了 Vim 的基本操作，靠着 &lt;code&gt;i&lt;/code&gt;、&lt;code&gt;q&lt;/code&gt; 等指令，配合上方向键，基本上能在 Vim 的世界里幸存下来了。勉强编辑一下服务器上的文件不是问题。&lt;/p&gt;
+&lt;p&gt;如果你的打字手势标准的话，你会发现方向键其实挺难触摸到，至少会破坏右手的姿势。因此在 Vim 中不鼓励使用方向键，可以用 &lt;code&gt;hjkl&lt;/code&gt; 来代替：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;h：向左移动一个字符&lt;/li&gt;
+&lt;li&gt;l：向右移动一个字符&lt;/li&gt;
+&lt;li&gt;j：向下移动一行&lt;/li&gt;
+&lt;li&gt;k：向上移动一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;重复移动&#34;&gt;重复移动&lt;/h3&gt;
+&lt;p&gt;如果要向上移动 5 行，或者向右移动 10 个字符，我们是不是要重复按下很多次呢？显然只有方向键才要这么做，Vim 中可以用数字来表示重复：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10j: 向下移动 10 行&lt;/li&gt;
+&lt;li&gt;5l: 向右移动五个字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个操作虽然简单，但是引出了贯穿 Vim 始终的核心思想：&lt;strong&gt;就像英语、中文有语法一样，Vim 也有语法&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Vim 的操作可以由若干个部分组合而成，每个部分又有多个可选值（比如光标移动就分上下左右）。Vim 的入门难度高，是因为每个部分都要学习，一下子需要掌握很多新知识点。但 Vim 后期的学习成本很低，因为无非就是各种组合而已。&lt;/p&gt;
+&lt;p&gt;还是以光标移动为例，&lt;code&gt;5j&lt;/code&gt; 由重复次数和动作组成，后面我们会介绍更多的动作，而且它们的前面都可以加上数字表示重复。&lt;/p&gt;
+&lt;h3 id=&#34;单词移动&#34;&gt;单词移动&lt;/h3&gt;
+&lt;p&gt;得益于普通模式和语法，Vim 支持强大的单词间移动：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt; 移动光标到下一个单词的词首(word)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; 移动光标到上一个单词的词首(begin)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e&lt;/code&gt; 移动光标到下一个单词的结尾(end)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ge&lt;/code&gt; 移动光标到上一个单词的结尾(不知道怎么解释了。。。)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里的单词是有严格约定的，而且不是那么显然，所以个人感觉这几个键并不是特别好用（往往你以为的跳转地址和真实跳转地址可能并不一致）。&lt;/p&gt;
+&lt;p&gt;不过如果你把空格当做单词的分隔符，倒是有比较简单的跳转方式，前三个命令都有大写格式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;W&lt;/code&gt; 移动光标到下一个单词的词首(word)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;B&lt;/code&gt; 移动光标到上一个单词的词首(begin)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E&lt;/code&gt; 移动光标到下一个单词的结尾(end)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里的单词特指以空格分割。&lt;/p&gt;
+&lt;p&gt;同样的，&lt;strong&gt;这些移动也支持重复任意多次&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;行和屏幕移动&#34;&gt;行和屏幕移动&lt;/h3&gt;
+&lt;p&gt;在行内，&lt;code&gt;^&lt;/code&gt; 表示移动到行首，它会自动忽视掉行首的空格，大部分情况下这是符合预期的，尤其是在代码缩进的情况下。如果想回到行首的空格上，可以用 &lt;code&gt;0&lt;/code&gt;。&lt;code&gt;$&lt;/code&gt; 表示移动到行尾。&lt;/p&gt;
+&lt;p&gt;Vim 的翻页快捷键是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + f&lt;/code&gt;：向后翻一页（forward）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + b&lt;/code&gt;：向前翻一页（backward）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + d&lt;/code&gt;：向后翻半页（down）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + u&lt;/code&gt;：向前翻半页（up）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还有几个快捷键可以用于调整页面布局：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zz&lt;/code&gt;：让当前行居中显示，方便浏览上下文&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zt&lt;/code&gt;：让当前行显示在最上方，方便浏览后面的内容（t 表示 top）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zb&lt;/code&gt;：让当前行显示在最下方，方便浏览前面的内容（b 表示 bottom）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;高级移动&#34;&gt;高级移动&lt;/h3&gt;
+&lt;p&gt;代码中经常遇到括号（包括 &lt;code&gt;(&lt;/code&gt;、&lt;code&gt;[&lt;/code&gt; 和 &lt;code&gt;{&lt;/code&gt;，也就是大中小三中括号），如果当前光标停留在括号上，按下 &lt;code&gt;%&lt;/code&gt; 即可匹配到对应的括号上。&lt;/p&gt;
+&lt;p&gt;除此以外，&lt;code&gt;*&lt;/code&gt; 和 &lt;code&gt;#&lt;/code&gt; 分别表示匹配当前光标下的单词，并移动到下一个单词和上一个单词&lt;/p&gt;
+&lt;h2 id=&#34;文本编辑&#34;&gt;文本编辑&lt;/h2&gt;
+&lt;p&gt;阅读完前两节，相信读者以经能够在 Vim 中自如的移动光标了，不过我们的编辑方式还比较简陋，只能进入编辑模式，像往常一样逐个字符的输入和删除，本节会介绍一些更高级的操作。&lt;/p&gt;
+&lt;h3 id=&#34;基础文本编辑&#34;&gt;基础文本编辑&lt;/h3&gt;
+&lt;p&gt;在普通模式下，按下 &lt;code&gt;o&lt;/code&gt; 会快速进入输入模式，并且在下一行进行编辑。如果按下大写的 &lt;code&gt;O&lt;/code&gt; 会在上一行编辑。&lt;/p&gt;
+&lt;p&gt;如果想在当前光标位置开始编辑，可以按下 &lt;code&gt;a&lt;/code&gt; 或 &lt;code&gt;i&lt;/code&gt;，前者表示在光标所在字符的右侧开始编辑，后者表示在左侧开始编辑。&lt;/p&gt;
+&lt;p&gt;我们还可以用 &lt;code&gt;I&lt;/code&gt; 前往行头开始编辑，或者用 &lt;code&gt;A&lt;/code&gt; 跳转到行尾编辑。&lt;/p&gt;
+&lt;p&gt;按下 &lt;code&gt;dd&lt;/code&gt; 可以快速删除一行，此时被删除的那一行会保存在 Vim 的剪贴板中。这一点类似于系统的 &lt;code&gt;Command + X&lt;/code&gt; 剪切，我们可以通过配置 Vim 来选择是否要与系统共享剪贴板。&lt;/p&gt;
+&lt;p&gt;普通模式下，按下 &lt;code&gt;p&lt;/code&gt; 可以把 Vim 剪贴板中的内容再拷贝出来，注意这里总是会拷贝到下一行或者光标的右侧。因此如果想交换当前行和下一行，可以输入：&lt;code&gt;ddp&lt;/code&gt;，这是因为当前被删除的行会复制到下一行的下面。&lt;/p&gt;
+&lt;p&gt;如果只想复制，不想删除，可以把命令 &lt;code&gt;p&lt;/code&gt; 换成 &lt;code&gt;y&lt;/code&gt;（表示：yank）。如果想删除后进入编辑模式，可以把 &lt;code&gt;p&lt;/code&gt; 换成 &lt;code&gt;c&lt;/code&gt;，比如 &lt;code&gt;cc&lt;/code&gt; 表示删除当前行并且从行首开始编辑。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意这里的 &lt;code&gt;p&lt;/code&gt;、&lt;code&gt;c&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt;、&lt;code&gt;d&lt;/code&gt; 都是动作，和前面说的 &lt;code&gt;j&lt;/code&gt;、&lt;code&gt;k&lt;/code&gt;、&lt;code&gt;l&lt;/code&gt;、&lt;code&gt;h&lt;/code&gt;、&lt;code&gt;w&lt;/code&gt;、&lt;code&gt;b&lt;/code&gt;、&lt;code&gt;e&lt;/code&gt; 一样，都支持用数字来重复，比如 &lt;code&gt;2dd&lt;/code&gt; 表示删除两行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;撤销与重做&#34;&gt;撤销与重做&lt;/h3&gt;
+&lt;p&gt;如果想撤销上一次修改，可以用 &lt;code&gt;u&lt;/code&gt;，类似于系统的 &lt;code&gt;Command + z&lt;/code&gt; 快捷键。&lt;/p&gt;
+&lt;p&gt;如果想重做，可以用 &lt;code&gt;Ctrl + R&lt;/code&gt;，类似于系统的 &lt;code&gt;Command + Shift + z&lt;/code&gt; 快捷键。&lt;/p&gt;
+&lt;h3 id=&#34;文本对象&#34;&gt;文本对象&lt;/h3&gt;
+&lt;p&gt;Vim 的文本对象能&lt;strong&gt;极大幅度&lt;/strong&gt;的提高编辑效率，也是 Vim 进阶之路上必须要掌握的概念。&lt;/p&gt;
+&lt;p&gt;对于上文介绍的 &lt;code&gt;c&lt;/code&gt;、&lt;code&gt;d&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt; 这些动作来说，作为单独的动作用处并不大，无非就是连续按两下对当前行做一些操作，而文本对象则扮演了语法中名词的概念，提供了更细粒度的操作。比如以下几种操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;diw&lt;/code&gt;： 删除一个单词（word）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ca&amp;quot;&lt;/code&gt;：删除双引号内的文本并编辑（包含双引号自身）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yi&amp;quot;&lt;/code&gt;：复制双引号内的文本（不包含双引号自身）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dtx&lt;/code&gt;：向右删除，直到遇到遇到字符 x（不包含 x）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上三个命令都属于同一大类操作，它们普遍遵循以下模式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;命令 = 动作 + 数量 + 描述词 + 文本对象&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这类命令通常由三个或四个字母组成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一个字母是动词，包括上文介绍的 &lt;code&gt;c&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt;、&lt;code&gt;d&lt;/code&gt; 等，表示你这个命令的主要目的。&lt;/li&gt;
+&lt;li&gt;第二个字母是可选的，表示重复几次&lt;/li&gt;
+&lt;li&gt;第三个字母是对范围的描述，比如 &lt;code&gt;a&lt;/code&gt; 表示包含边界，&lt;code&gt;i&lt;/code&gt; 不包含，&lt;code&gt;t&lt;/code&gt; 表示向右查找，&lt;code&gt;T&lt;/code&gt; 向左。&lt;/li&gt;
+&lt;li&gt;第四个字母是文本对象，可以是内容的字面量描述，比如 &lt;code&gt;&amp;quot;&lt;/code&gt;、&lt;code&gt;&#39;&lt;/code&gt;、`、&lt;code&gt;&amp;lt;&lt;/code&gt;、&lt;code&gt;{&lt;/code&gt;、&lt;code&gt;(&lt;/code&gt; 等等，也可以是固定单词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里详细介绍下文本对象，除了字面量外，以下单词有特定的含义：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;：表示段落&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;：表示句子&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt;：表示单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t&lt;/code&gt;：特指标签，一定要具备 &lt;code&gt;&amp;lt;xx&amp;gt;abc&amp;lt;/xx&amp;gt;&lt;/code&gt; 的结构，此时的 &lt;code&gt;t&lt;/code&gt; 代表 abc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于字面量的文本对象，除了 &lt;code&gt;&amp;quot;&lt;/code&gt;、&lt;code&gt;&#39;&lt;/code&gt; 和 ` 这三个引号外，另外几个括号都可以用 &lt;code&gt;b&lt;/code&gt; 来表示（block），这样就不用区分大中小和尖括号了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;搜索与替换&#34;&gt;搜索与替换&lt;/h3&gt;
+&lt;p&gt;使用 &lt;code&gt;/&lt;/code&gt; 进行搜索，搜索默认是匹配大小写的，使用 &lt;code&gt;/pattern\c&lt;/code&gt; 可以强制忽略大小写，使用 &lt;code&gt;/pattern\C&lt;/code&gt; 可以强制匹配大小写。&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;:范围s/oldpattern/newpattern/替换模式&lt;/code&gt; 可以进行替换。&lt;/p&gt;
+&lt;p&gt;如果我们已经进行过搜索，那么 &lt;code&gt;oldpattern&lt;/code&gt; 可以省略不写，默认就是上一次的搜索内容。&lt;/p&gt;
+&lt;p&gt;最常用的范围是 &lt;code&gt;begin&lt;/code&gt;, &lt;code&gt;end&lt;/code&gt;，其中 &lt;code&gt;begin&lt;/code&gt; 是开始行号，&lt;code&gt;end&lt;/code&gt; 是结束行号，表示在第 &lt;code&gt;begin&lt;/code&gt; 行到第 &lt;code&gt;end&lt;/code&gt; 行之间进行替换，比如：&lt;code&gt;:1,10s/hello/hallo/g&lt;/code&gt; 表示把第 1 - 10 行中所有的 &lt;code&gt;hello&lt;/code&gt; 换成 &lt;code&gt;hallo&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;范围还有一些简单的表示法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.,10&lt;/code&gt; 表示当前行到第 10 行，点表示当前行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.,$&lt;/code&gt; 表示当前行到文件末尾，美刀符号表示文件结尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt; 表示 &lt;code&gt;1,$&lt;/code&gt;，也就是整个文件，比如全文替换通常写成 &lt;code&gt;:%s/old/new/g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.,+2&lt;/code&gt; 表示当前行和接下来的两行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上文反复提到的字母 &lt;code&gt;g&lt;/code&gt; 其实是一种替换模式，表示替换这个范围内所有出现的 &lt;code&gt;oldpattern&lt;/code&gt;，如果不写则只替换第一次出现。常用的模式还有 &lt;code&gt;c&lt;/code&gt;，表示替换需要确认（Confirm），&lt;code&gt;i&lt;/code&gt; 表示大小写不敏感，&lt;code&gt;I&lt;/code&gt; 表示大小写敏感。&lt;/p&gt;
+&lt;h3 id=&#34;大小写切换&#34;&gt;大小写切换&lt;/h3&gt;
+&lt;p&gt;以下是几个常用的，切换大小写的命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;guu&lt;/code&gt; 当前行全部小写，&lt;code&gt;gUU&lt;/code&gt; 当前行全部大写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt; 当前光标下的字符切换大小写, &lt;code&gt;3~&lt;/code&gt; 当前光标下后面三个字符切换大小写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;guiw&lt;/code&gt; 当前单词全部小写，&lt;code&gt;gUiw&lt;/code&gt; 当前单词全部大写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g~iw&lt;/code&gt; 当前单词每个字符大小写交换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;列操作&#34;&gt;列操作&lt;/h3&gt;
+&lt;p&gt;如果有多行文本要做相同的操作，可以借助 Vim 中列操作的概念来快速完成，举一个实际实际的例子，假设有以下这段代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c;
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; z;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;有一天我们发现 &lt;code&gt;int&lt;/code&gt; 不是很准确，要改成：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; a;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; b;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; c;
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; z;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;难道还要手动复制粘贴不成？请看列操作大法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先按下 &lt;code&gt;Ctrl + V&lt;/code&gt; 进入列操作模式&lt;/li&gt;
+&lt;li&gt;然后用 &lt;code&gt;j&lt;/code&gt;、&lt;code&gt;k&lt;/code&gt; 进行跳转，表示你要操作多少行&lt;/li&gt;
+&lt;li&gt;这时你对每一行的操作都会应用到所有行上，比如输入 &lt;code&gt;ec&lt;/code&gt;，删除单词进入编辑模式&lt;/li&gt;
+&lt;li&gt;输入 &lt;code&gt;uint_8&lt;/code&gt;，按下 &lt;code&gt;Esc&lt;/code&gt; 退出编辑，Vim 会自动应用到所有行上。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;宏&#34;&gt;宏&lt;/h3&gt;
+&lt;p&gt;列操作的本质是多行同时操作，如果每一行的操作类似，但都有细微差别，就需要引入 录制、回放 的概念了。此时可以用 Vim 中的宏。&lt;/p&gt;
+&lt;p&gt;一个典型的场景是，我们在写 Markdown：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 第一条
+2. 第二条
+3. 第三题
+...
+10. 第十条
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;写着写着突然发现，第一条和第二条中间还要加一条，左边的序号就不好处理了，因为我们要把原来的序号 2 到 10 分别加一。&lt;/p&gt;
+&lt;p&gt;在 Vim 中，我们“只”需要输入 &lt;code&gt;qajC-aq6@a&lt;/code&gt;，相信你一定很想打我，这特么一点也不简单啊。别急，拆开来看：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;qa（q 表示开始录制宏，a 表示录制内容存储在寄存器 a 中）
+j（向下一行）
+Ctrl + a（数字加一）
+q（再按一次 q 表示结束录制）
+6@a（把存储在寄存器 a 中的宏执行 6 次）
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;是不是感觉 So Easy!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intellij Idea Keymap for Mac</title>
+      <link>https://wangxinping.github.io/post/intellij-idea-keymap-for-mac/</link>
+      <pubDate>Thu, 17 Oct 2019 16:46:04 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/intellij-idea-keymap-for-mac/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;根据&lt;a href=&#34;https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf&#34;&gt;官方文档&lt;/a&gt;翻译&lt;strong&gt;修正&lt;/strong&gt;（个别快捷键与官方文档中不符）而来&lt;/li&gt;
+&lt;li&gt;在 IntelliJ IDEA 中有两个 Mac 版本的快捷键，一个叫做：Mac OS X，一个叫做：Mac OS X 10.5+&lt;/li&gt;
+&lt;li&gt;目前用的一般是最新的：Mac OS X 10.5+&lt;/li&gt;
+&lt;li&gt;有两套的&lt;a href=&#34;https://intellij-support.jetbrains.com/hc/en-us/community/posts/206159109-Updated-Mac-OS-X-keymap-Feedback-needed&#34;&gt;原因&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;建议将 Mac 系统中与 IntelliJ IDEA 冲突的快捷键取消或更改，不建议改 IntelliJ IDEA 的默认快捷键&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;mac键盘符号和修饰键说明&#34;&gt;Mac键盘符号和修饰键说明&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;⌘&lt;/code&gt; Command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇧&lt;/code&gt; Shift&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌥&lt;/code&gt; Option&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌃&lt;/code&gt; Control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↩︎&lt;/code&gt; Return/Enter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌫&lt;/code&gt; Delete&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌦&lt;/code&gt; 向前删除键（Fn+Delete）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↑&lt;/code&gt; 上箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↓&lt;/code&gt; 下箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;←&lt;/code&gt; 左箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;→&lt;/code&gt; 右箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇞&lt;/code&gt; Page Up（Fn+&lt;code&gt;↑&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇟&lt;/code&gt; Page Down（Fn+&lt;code&gt;↓&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Home&lt;/code&gt; Fn + &lt;code&gt;←&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;End&lt;/code&gt; Fn + &lt;code&gt;→&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇥&lt;/code&gt; 右制表符（Tab键）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇤&lt;/code&gt; 左制表符（Shift+Tab）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⎋&lt;/code&gt; Escape (Esc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;editing编辑&#34;&gt;Editing（编辑）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Control + Space&lt;/code&gt; 基本的代码补全（补全任何类、方法、变量）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Control + Shift + Space&lt;/code&gt; 智能代码补全（过滤器方法列表和变量的预期类型）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + Enter&lt;/code&gt; 自动结束代码，行末自动添加分号&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Command + P&lt;/code&gt; 显示方法的参数信息&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + J&lt;/code&gt; 快速查看文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + F1&lt;/code&gt; 查看外部文档（在某些代码上会触发打开浏览器显示相关文档）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + 鼠标放在代码上&lt;/code&gt; 显示代码简要信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F1&lt;/code&gt; 在错误或警告处显示具体描述信息&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + N, Control + Enter&lt;/code&gt; 生成代码（getter、setter、构造函数、hashCode/equals,toString）&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + O&lt;/code&gt; 覆盖方法（重写父类方法）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + I&lt;/code&gt; 实现方法（实现接口中的方法）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + T&lt;/code&gt; 包围代码（使用if..else, try..catch, for, synchronized等包围选中的代码）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + /&lt;/code&gt; 注释/取消注释与行注释&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + /&lt;/code&gt; 注释/取消注释与块注释&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Option + 方向键上&lt;/code&gt; 连续选中代码块&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Option + 方向键下&lt;/code&gt; 减少当前选中的代码块&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + Q&lt;/code&gt; 显示上下文信息&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Option + Enter&lt;/code&gt; 显示意向动作和快速修复代码&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + L&lt;/code&gt; 格式化代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + O&lt;/code&gt; 优化import&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + I&lt;/code&gt; 自动缩进线&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tab / Shift + Tab&lt;/code&gt; 缩进代码 / 反缩进代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + X&lt;/code&gt; 剪切当前行或选定的块到剪贴板&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + C&lt;/code&gt; 复制当前行或选定的块到剪贴板&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + V&lt;/code&gt; 从剪贴板粘贴&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + V&lt;/code&gt; 从最近的缓冲区粘贴&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + D&lt;/code&gt; 复制当前行或选定的块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Delete&lt;/code&gt; 删除当前行或选定的块的行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + J&lt;/code&gt; 智能的将代码拼接成一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Enter&lt;/code&gt; 智能的拆分拼接的行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + Enter&lt;/code&gt; 开始新的一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + U&lt;/code&gt; 大小写切换&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + Option + Shift + ] / Command + Option + Shift + [&lt;/code&gt; 选择直到代码块结束/开始&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + Shift + ] / Command + Shift + [&lt;/code&gt; 返回光标或选择到前 / 后一操作效果&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Fn + Delete&lt;/code&gt; 删除到单词的末尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Delete&lt;/code&gt; 删除到单词的开头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + 加号 / Command + 减号&lt;/code&gt; 展开 / 折叠代码块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + 加号&lt;/code&gt; 展开所以代码块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + 减号&lt;/code&gt; 折叠所有代码块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + W&lt;/code&gt; 关闭活动的编辑器选项卡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;searchreplace查询替换&#34;&gt;Search/Replace（查询/替换）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Double Shift&lt;/code&gt; 查询任何东西&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F&lt;/code&gt; 文件内查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + G&lt;/code&gt; 查找模式下，向下查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + G&lt;/code&gt; 查找模式下，向上查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + R&lt;/code&gt; 文件内替换&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F&lt;/code&gt; 全局查找（根据路径）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + R&lt;/code&gt; 全局替换（根据路径）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + S&lt;/code&gt; 查询结构（Ultimate Edition 版专用，需要在Keymap中设置）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + M&lt;/code&gt; 替换结构（Ultimate Edition 版专用，需要在Keymap中设置）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;usage-search使用查询&#34;&gt;Usage Search（使用查询）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Option + F7 / Command + F7&lt;/code&gt; 在文件中查找用法 / 在类中查找用法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F7&lt;/code&gt; 在文件中突出显示的用法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + F7&lt;/code&gt; 显示用法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;compile-and-run编译和运行&#34;&gt;Compile and Run（编译和运行）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + F9&lt;/code&gt; 编译Project&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F9&lt;/code&gt; 编译选择的文件、包或模块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + R&lt;/code&gt; 弹出 Run 的可选择菜单&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + D&lt;/code&gt; 弹出 Debug 的可选择菜单&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + R&lt;/code&gt; 运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + D&lt;/code&gt; 调试&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + R, Control + Shift + D&lt;/code&gt; 从编辑器运行上下文环境配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;debugging调试&#34;&gt;Debugging（调试）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F8&lt;/code&gt; 进入下一步，如果当前行断点是一个方法，则不进入当前方法体内&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F7&lt;/code&gt; 进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + F7&lt;/code&gt; 智能步入，断点所在行上有多个方法调用，会弹出进入哪个方法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + F8&lt;/code&gt; 跳出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F9&lt;/code&gt; 运行到光标处，如果光标前有其他断点会进入到该断点&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F8&lt;/code&gt; 计算表达式（可以更改变量值使其生效）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + R&lt;/code&gt; 恢复程序运行，如果该断点下面代码还有断点则停在下一个断点上&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F8&lt;/code&gt; 切换断点（若光标当前行有断点则取消断点，没有则加上断点）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F8&lt;/code&gt; 查看断点信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;navigation导航&#34;&gt;Navigation（导航）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + O&lt;/code&gt; 查找类文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + O&lt;/code&gt; 查找所有类型文件、打开文件、打开目录，打开目录需要在输入的内容前面或后面加一个反斜杠/&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + O&lt;/code&gt; 前往指定的变量 / 方法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + 方向键左 / Control + 方向键右&lt;/code&gt; 左右切换打开的编辑tab页&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12&lt;/code&gt; 返回到前一个工具窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Esc&lt;/code&gt; 从工具窗口进入代码文件窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + Esc&lt;/code&gt; 隐藏当前或最后一个活动的窗口，且光标进入代码文件窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F4&lt;/code&gt; 关闭活动run/messages/find/&amp;hellip; tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + L&lt;/code&gt; 在当前文件跳转到某一行的指定处&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Command + E&lt;/code&gt; 显示最近打开的文件记录列表&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + 方向键左 / Option + 方向键右&lt;/code&gt; 光标跳转到当前单词 / 中文句的左 / 右侧开头位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + 方向键左 / Command + Option + 方向键右&lt;/code&gt; 退回 / 前进到上一个操作的地方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + Delete&lt;/code&gt; 跳转到最后一个编辑的地方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F1&lt;/code&gt; 显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择(如在代码编辑窗口可以选择显示该文件的Finder)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + B / Command + 鼠标点击&lt;/code&gt; 进入光标所在的方法/变量的接口或是定义处&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + B&lt;/code&gt; 跳转到实现处，在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Space, Command + Y&lt;/code&gt; 快速打开光标所在方法、类的定义&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + B&lt;/code&gt; 跳转到类型声明处&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + U&lt;/code&gt; 前往当前光标所在方法的父类的方法 / 接口定义&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + 方向键下 / Control + 方向键上&lt;/code&gt; 当前光标跳转到当前文件的前一个/后一个方法名位置&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + Option + ] / Command + Option + [&lt;/code&gt; 移动光标到当前所在代码的花括号开始/结束位置&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + ] / Command + [&lt;/code&gt; 返回光标或选择到前 / 后一操作效果&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F12&lt;/code&gt; 弹出当前文件结构层，可以在弹出的层上直接输入进行筛选（可用于搜索类中的方法）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + H&lt;/code&gt; 显示当前类的层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + H&lt;/code&gt; 显示方法层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + H&lt;/code&gt; 显示调用层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F2 / Shift + F2&lt;/code&gt; 跳转到下一个/上一个突出错误或警告的位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F4 / Command + 方向键下&lt;/code&gt; 编辑/查看代码源&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Home&lt;/code&gt; 显示到当前文件的导航条&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F3&lt;/code&gt; 选中文件/文件夹/代码行，添加/取消书签&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F3&lt;/code&gt; 选中文件/文件夹/代码行，使用助记符添加/取消书签&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + 0...Control + 9&lt;/code&gt; 定位到对应数值的书签位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F3&lt;/code&gt; 显示所有书签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;refactoring重构&#34;&gt;Refactoring（重构）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F5&lt;/code&gt; 复制文件到指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F6&lt;/code&gt; 移动文件到指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Delete&lt;/code&gt; 在文件上为安全删除文件，弹出确认框&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Shift + F6&lt;/code&gt; 重命名文件&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F6&lt;/code&gt; 更改签名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + N&lt;/code&gt; 一致性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + M&lt;/code&gt; 将选中的代码提取为方法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + V&lt;/code&gt; 提取变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + F&lt;/code&gt; 提取字段&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + C&lt;/code&gt; 提取常量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + P&lt;/code&gt; 提取参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;vcslocal-history版本控制本地历史记录&#34;&gt;VCS/Local History（版本控制/本地历史记录）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + K&lt;/code&gt; 提交代码到版本控制器&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + T&lt;/code&gt; 从版本控制器更新代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Shift + C&lt;/code&gt; 查看最近的变更记录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + C&lt;/code&gt; 快速弹出版本控制器操作面板&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;live-templates动态代码模板&#34;&gt;Live Templates（动态代码模板）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + J&lt;/code&gt; 弹出模板选择窗口，将选定的代码使用动态模板包住&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + J&lt;/code&gt; 插入自定义动态代码模板&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general通用&#34;&gt;General（通用）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + 1...Command + 9&lt;/code&gt; 打开相应编号的工具窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + S&lt;/code&gt; 保存所有&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + Y&lt;/code&gt; 同步、刷新&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Command + F&lt;/code&gt; 切换全屏模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F12&lt;/code&gt; 切换最大化编辑器&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Shift + F&lt;/code&gt; 添加到收藏夹&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Shift + I&lt;/code&gt; 检查当前文件与当前的配置文件&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;Control + `&lt;!-- raw HTML omitted --&gt; 快速切换当前的scheme（切换主题、代码样式等）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + ,&lt;/code&gt; 打开IDEA系统设置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + ;&lt;/code&gt; 打开项目结构对话框&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + Command + A&lt;/code&gt; 查找动作（可设置相关选项）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + Tab&lt;/code&gt; 编辑窗口标签和工具窗口之间切换（如果在切换的过程加按上delete，则是关闭对应选中的窗口）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other一些官方文档上没有体现的快捷键&#34;&gt;Other（一些官方文档上没有体现的快捷键）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + 8&lt;/code&gt; 竖编辑模式&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Academic</title>
+      <link>https://wangxinping.github.io/post/welcome-to-academic/</link>
+      <pubDate>Thu, 17 Oct 2019 14:07:30 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-academic/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt; is a website builder for &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. The Academic framework enables you to easily create a beautifully simple website using the Hugo static site generator in a few minutes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Hugo</title>
+      <link>https://wangxinping.github.io/post/welcome-to-hugo/</link>
+      <pubDate>Thu, 17 Oct 2019 13:07:03 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is a fast and modern static site generator written in Go, like &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; written in ruby and &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt; written in node.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

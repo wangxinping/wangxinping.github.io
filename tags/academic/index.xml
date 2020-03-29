@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic | 遮天个人站</title>
+    <link>https://wangxinping.github.io/tags/academic/</link>
+      <atom:link href="https://wangxinping.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Oct 2019 14:07:30 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>Academic</title>
+      <link>https://wangxinping.github.io/tags/academic/</link>
+    </image>
+    
+    <item>
+      <title>Welcome to Academic</title>
+      <link>https://wangxinping.github.io/post/welcome-to-academic/</link>
+      <pubDate>Thu, 17 Oct 2019 14:07:30 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-academic/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt; is a website builder for &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. The Academic framework enables you to easily create a beautifully simple website using the Hugo static site generator in a few minutes.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown | 遮天个人站</title>
+    <link>https://wangxinping.github.io/categories/markdown/</link>
+      <atom:link href="https://wangxinping.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>Markdown</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 18 Oct 2019 13:20:51 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>Markdown</title>
+      <link>https://wangxinping.github.io/categories/markdown/</link>
+    </image>
+    
+    <item>
+      <title>Welcome to Markdown</title>
+      <link>https://wangxinping.github.io/post/welcome-to-markdown/</link>
+      <pubDate>Fri, 18 Oct 2019 13:20:51 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-markdown/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

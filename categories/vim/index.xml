@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim | 遮天个人站</title>
+    <link>https://wangxinping.github.io/categories/vim/</link>
+      <atom:link href="https://wangxinping.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Vim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Oct 2019 18:53:05 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>Vim</title>
+      <link>https://wangxinping.github.io/categories/vim/</link>
+    </image>
+    
+    <item>
+      <title>Welcome to Vim</title>
+      <link>https://wangxinping.github.io/post/welcome-to-vim/</link>
+      <pubDate>Thu, 17 Oct 2019 18:53:05 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-vim/</guid>
+      <description>&lt;h2 id=&#34;vim-基本操作&#34;&gt;Vim 基本操作&lt;/h2&gt;
+&lt;p&gt;Vim 分为三种模式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;输入模式：这就是很普通的编辑器一样，光标在某个位置上闪烁，表示我们可以输入内容了。&lt;/li&gt;
+&lt;li&gt;普通模式：在输入模式下按下 &lt;code&gt;Esc&lt;/code&gt; 键可以退出输入模式，进入到普通模式。&lt;/li&gt;
+&lt;li&gt;命令模式：执行搜索、替换等命令或调用插件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;普通模式&lt;/strong&gt;是 Vim 的一大特色，能够进行很多操作，比如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;快速移动光标&lt;/li&gt;
+&lt;li&gt;快速替换、删除某些内容&lt;/li&gt;
+&lt;li&gt;进入输入模式或命令模式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用 &lt;code&gt;vim&lt;/code&gt; 打开文件后，默认进入普通模式，如果我们要编辑文本，可以按下 &lt;code&gt;i&lt;/code&gt; 进入编辑模式，编辑完后再按下 &lt;code&gt;Esc&lt;/code&gt; 键可以退出输入模式，进入到普通模式。&lt;/p&gt;
+&lt;p&gt;如果想退出 vim，则需要借助命令模式。按下 &lt;code&gt;:&lt;/code&gt; 并输入以下内容之一：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;q&lt;/code&gt;：退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;q!&lt;/code&gt;：如果对文件作了修改，无法用 &lt;code&gt;q&lt;/code&gt; 退出，此时 &lt;code&gt;q!&lt;/code&gt; 表示丢弃修改并退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wq&lt;/code&gt;：保存并退出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;vim-光标移动&#34;&gt;Vim 光标移动&lt;/h2&gt;
+&lt;p&gt;上一节中我们介绍了 Vim 的基本操作，靠着 &lt;code&gt;i&lt;/code&gt;、&lt;code&gt;q&lt;/code&gt; 等指令，配合上方向键，基本上能在 Vim 的世界里幸存下来了。勉强编辑一下服务器上的文件不是问题。&lt;/p&gt;
+&lt;p&gt;如果你的打字手势标准的话，你会发现方向键其实挺难触摸到，至少会破坏右手的姿势。因此在 Vim 中不鼓励使用方向键，可以用 &lt;code&gt;hjkl&lt;/code&gt; 来代替：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;h：向左移动一个字符&lt;/li&gt;
+&lt;li&gt;l：向右移动一个字符&lt;/li&gt;
+&lt;li&gt;j：向下移动一行&lt;/li&gt;
+&lt;li&gt;k：向上移动一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;重复移动&#34;&gt;重复移动&lt;/h3&gt;
+&lt;p&gt;如果要向上移动 5 行，或者向右移动 10 个字符，我们是不是要重复按下很多次呢？显然只有方向键才要这么做，Vim 中可以用数字来表示重复：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10j: 向下移动 10 行&lt;/li&gt;
+&lt;li&gt;5l: 向右移动五个字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个操作虽然简单，但是引出了贯穿 Vim 始终的核心思想：&lt;strong&gt;就像英语、中文有语法一样，Vim 也有语法&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Vim 的操作可以由若干个部分组合而成，每个部分又有多个可选值（比如光标移动就分上下左右）。Vim 的入门难度高，是因为每个部分都要学习，一下子需要掌握很多新知识点。但 Vim 后期的学习成本很低，因为无非就是各种组合而已。&lt;/p&gt;
+&lt;p&gt;还是以光标移动为例，&lt;code&gt;5j&lt;/code&gt; 由重复次数和动作组成，后面我们会介绍更多的动作，而且它们的前面都可以加上数字表示重复。&lt;/p&gt;
+&lt;h3 id=&#34;单词移动&#34;&gt;单词移动&lt;/h3&gt;
+&lt;p&gt;得益于普通模式和语法，Vim 支持强大的单词间移动：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt; 移动光标到下一个单词的词首(word)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; 移动光标到上一个单词的词首(begin)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e&lt;/code&gt; 移动光标到下一个单词的结尾(end)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ge&lt;/code&gt; 移动光标到上一个单词的结尾(不知道怎么解释了。。。)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里的单词是有严格约定的，而且不是那么显然，所以个人感觉这几个键并不是特别好用（往往你以为的跳转地址和真实跳转地址可能并不一致）。&lt;/p&gt;
+&lt;p&gt;不过如果你把空格当做单词的分隔符，倒是有比较简单的跳转方式，前三个命令都有大写格式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;W&lt;/code&gt; 移动光标到下一个单词的词首(word)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;B&lt;/code&gt; 移动光标到上一个单词的词首(begin)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E&lt;/code&gt; 移动光标到下一个单词的结尾(end)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里的单词特指以空格分割。&lt;/p&gt;
+&lt;p&gt;同样的，&lt;strong&gt;这些移动也支持重复任意多次&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;行和屏幕移动&#34;&gt;行和屏幕移动&lt;/h3&gt;
+&lt;p&gt;在行内，&lt;code&gt;^&lt;/code&gt; 表示移动到行首，它会自动忽视掉行首的空格，大部分情况下这是符合预期的，尤其是在代码缩进的情况下。如果想回到行首的空格上，可以用 &lt;code&gt;0&lt;/code&gt;。&lt;code&gt;$&lt;/code&gt; 表示移动到行尾。&lt;/p&gt;
+&lt;p&gt;Vim 的翻页快捷键是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + f&lt;/code&gt;：向后翻一页（forward）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + b&lt;/code&gt;：向前翻一页（backward）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + d&lt;/code&gt;：向后翻半页（down）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + u&lt;/code&gt;：向前翻半页（up）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还有几个快捷键可以用于调整页面布局：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zz&lt;/code&gt;：让当前行居中显示，方便浏览上下文&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zt&lt;/code&gt;：让当前行显示在最上方，方便浏览后面的内容（t 表示 top）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zb&lt;/code&gt;：让当前行显示在最下方，方便浏览前面的内容（b 表示 bottom）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;高级移动&#34;&gt;高级移动&lt;/h3&gt;
+&lt;p&gt;代码中经常遇到括号（包括 &lt;code&gt;(&lt;/code&gt;、&lt;code&gt;[&lt;/code&gt; 和 &lt;code&gt;{&lt;/code&gt;，也就是大中小三中括号），如果当前光标停留在括号上，按下 &lt;code&gt;%&lt;/code&gt; 即可匹配到对应的括号上。&lt;/p&gt;
+&lt;p&gt;除此以外，&lt;code&gt;*&lt;/code&gt; 和 &lt;code&gt;#&lt;/code&gt; 分别表示匹配当前光标下的单词，并移动到下一个单词和上一个单词&lt;/p&gt;
+&lt;h2 id=&#34;文本编辑&#34;&gt;文本编辑&lt;/h2&gt;
+&lt;p&gt;阅读完前两节，相信读者以经能够在 Vim 中自如的移动光标了，不过我们的编辑方式还比较简陋，只能进入编辑模式，像往常一样逐个字符的输入和删除，本节会介绍一些更高级的操作。&lt;/p&gt;
+&lt;h3 id=&#34;基础文本编辑&#34;&gt;基础文本编辑&lt;/h3&gt;
+&lt;p&gt;在普通模式下，按下 &lt;code&gt;o&lt;/code&gt; 会快速进入输入模式，并且在下一行进行编辑。如果按下大写的 &lt;code&gt;O&lt;/code&gt; 会在上一行编辑。&lt;/p&gt;
+&lt;p&gt;如果想在当前光标位置开始编辑，可以按下 &lt;code&gt;a&lt;/code&gt; 或 &lt;code&gt;i&lt;/code&gt;，前者表示在光标所在字符的右侧开始编辑，后者表示在左侧开始编辑。&lt;/p&gt;
+&lt;p&gt;我们还可以用 &lt;code&gt;I&lt;/code&gt; 前往行头开始编辑，或者用 &lt;code&gt;A&lt;/code&gt; 跳转到行尾编辑。&lt;/p&gt;
+&lt;p&gt;按下 &lt;code&gt;dd&lt;/code&gt; 可以快速删除一行，此时被删除的那一行会保存在 Vim 的剪贴板中。这一点类似于系统的 &lt;code&gt;Command + X&lt;/code&gt; 剪切，我们可以通过配置 Vim 来选择是否要与系统共享剪贴板。&lt;/p&gt;
+&lt;p&gt;普通模式下，按下 &lt;code&gt;p&lt;/code&gt; 可以把 Vim 剪贴板中的内容再拷贝出来，注意这里总是会拷贝到下一行或者光标的右侧。因此如果想交换当前行和下一行，可以输入：&lt;code&gt;ddp&lt;/code&gt;，这是因为当前被删除的行会复制到下一行的下面。&lt;/p&gt;
+&lt;p&gt;如果只想复制，不想删除，可以把命令 &lt;code&gt;p&lt;/code&gt; 换成 &lt;code&gt;y&lt;/code&gt;（表示：yank）。如果想删除后进入编辑模式，可以把 &lt;code&gt;p&lt;/code&gt; 换成 &lt;code&gt;c&lt;/code&gt;，比如 &lt;code&gt;cc&lt;/code&gt; 表示删除当前行并且从行首开始编辑。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意这里的 &lt;code&gt;p&lt;/code&gt;、&lt;code&gt;c&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt;、&lt;code&gt;d&lt;/code&gt; 都是动作，和前面说的 &lt;code&gt;j&lt;/code&gt;、&lt;code&gt;k&lt;/code&gt;、&lt;code&gt;l&lt;/code&gt;、&lt;code&gt;h&lt;/code&gt;、&lt;code&gt;w&lt;/code&gt;、&lt;code&gt;b&lt;/code&gt;、&lt;code&gt;e&lt;/code&gt; 一样，都支持用数字来重复，比如 &lt;code&gt;2dd&lt;/code&gt; 表示删除两行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;撤销与重做&#34;&gt;撤销与重做&lt;/h3&gt;
+&lt;p&gt;如果想撤销上一次修改，可以用 &lt;code&gt;u&lt;/code&gt;，类似于系统的 &lt;code&gt;Command + z&lt;/code&gt; 快捷键。&lt;/p&gt;
+&lt;p&gt;如果想重做，可以用 &lt;code&gt;Ctrl + R&lt;/code&gt;，类似于系统的 &lt;code&gt;Command + Shift + z&lt;/code&gt; 快捷键。&lt;/p&gt;
+&lt;h3 id=&#34;文本对象&#34;&gt;文本对象&lt;/h3&gt;
+&lt;p&gt;Vim 的文本对象能&lt;strong&gt;极大幅度&lt;/strong&gt;的提高编辑效率，也是 Vim 进阶之路上必须要掌握的概念。&lt;/p&gt;
+&lt;p&gt;对于上文介绍的 &lt;code&gt;c&lt;/code&gt;、&lt;code&gt;d&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt; 这些动作来说，作为单独的动作用处并不大，无非就是连续按两下对当前行做一些操作，而文本对象则扮演了语法中名词的概念，提供了更细粒度的操作。比如以下几种操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;diw&lt;/code&gt;： 删除一个单词（word）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ca&amp;quot;&lt;/code&gt;：删除双引号内的文本并编辑（包含双引号自身）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yi&amp;quot;&lt;/code&gt;：复制双引号内的文本（不包含双引号自身）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dtx&lt;/code&gt;：向右删除，直到遇到遇到字符 x（不包含 x）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上三个命令都属于同一大类操作，它们普遍遵循以下模式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;命令 = 动作 + 数量 + 描述词 + 文本对象&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这类命令通常由三个或四个字母组成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一个字母是动词，包括上文介绍的 &lt;code&gt;c&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt;、&lt;code&gt;d&lt;/code&gt; 等，表示你这个命令的主要目的。&lt;/li&gt;
+&lt;li&gt;第二个字母是可选的，表示重复几次&lt;/li&gt;
+&lt;li&gt;第三个字母是对范围的描述，比如 &lt;code&gt;a&lt;/code&gt; 表示包含边界，&lt;code&gt;i&lt;/code&gt; 不包含，&lt;code&gt;t&lt;/code&gt; 表示向右查找，&lt;code&gt;T&lt;/code&gt; 向左。&lt;/li&gt;
+&lt;li&gt;第四个字母是文本对象，可以是内容的字面量描述，比如 &lt;code&gt;&amp;quot;&lt;/code&gt;、&lt;code&gt;&#39;&lt;/code&gt;、`、&lt;code&gt;&amp;lt;&lt;/code&gt;、&lt;code&gt;{&lt;/code&gt;、&lt;code&gt;(&lt;/code&gt; 等等，也可以是固定单词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里详细介绍下文本对象，除了字面量外，以下单词有特定的含义：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;：表示段落&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;：表示句子&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt;：表示单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t&lt;/code&gt;：特指标签，一定要具备 &lt;code&gt;&amp;lt;xx&amp;gt;abc&amp;lt;/xx&amp;gt;&lt;/code&gt; 的结构，此时的 &lt;code&gt;t&lt;/code&gt; 代表 abc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于字面量的文本对象，除了 &lt;code&gt;&amp;quot;&lt;/code&gt;、&lt;code&gt;&#39;&lt;/code&gt; 和 ` 这三个引号外，另外几个括号都可以用 &lt;code&gt;b&lt;/code&gt; 来表示（block），这样就不用区分大中小和尖括号了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;搜索与替换&#34;&gt;搜索与替换&lt;/h3&gt;
+&lt;p&gt;使用 &lt;code&gt;/&lt;/code&gt; 进行搜索，搜索默认是匹配大小写的，使用 &lt;code&gt;/pattern\c&lt;/code&gt; 可以强制忽略大小写，使用 &lt;code&gt;/pattern\C&lt;/code&gt; 可以强制匹配大小写。&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;:范围s/oldpattern/newpattern/替换模式&lt;/code&gt; 可以进行替换。&lt;/p&gt;
+&lt;p&gt;如果我们已经进行过搜索，那么 &lt;code&gt;oldpattern&lt;/code&gt; 可以省略不写，默认就是上一次的搜索内容。&lt;/p&gt;
+&lt;p&gt;最常用的范围是 &lt;code&gt;begin&lt;/code&gt;, &lt;code&gt;end&lt;/code&gt;，其中 &lt;code&gt;begin&lt;/code&gt; 是开始行号，&lt;code&gt;end&lt;/code&gt; 是结束行号，表示在第 &lt;code&gt;begin&lt;/code&gt; 行到第 &lt;code&gt;end&lt;/code&gt; 行之间进行替换，比如：&lt;code&gt;:1,10s/hello/hallo/g&lt;/code&gt; 表示把第 1 - 10 行中所有的 &lt;code&gt;hello&lt;/code&gt; 换成 &lt;code&gt;hallo&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;范围还有一些简单的表示法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.,10&lt;/code&gt; 表示当前行到第 10 行，点表示当前行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.,$&lt;/code&gt; 表示当前行到文件末尾，美刀符号表示文件结尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt; 表示 &lt;code&gt;1,$&lt;/code&gt;，也就是整个文件，比如全文替换通常写成 &lt;code&gt;:%s/old/new/g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.,+2&lt;/code&gt; 表示当前行和接下来的两行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上文反复提到的字母 &lt;code&gt;g&lt;/code&gt; 其实是一种替换模式，表示替换这个范围内所有出现的 &lt;code&gt;oldpattern&lt;/code&gt;，如果不写则只替换第一次出现。常用的模式还有 &lt;code&gt;c&lt;/code&gt;，表示替换需要确认（Confirm），&lt;code&gt;i&lt;/code&gt; 表示大小写不敏感，&lt;code&gt;I&lt;/code&gt; 表示大小写敏感。&lt;/p&gt;
+&lt;h3 id=&#34;大小写切换&#34;&gt;大小写切换&lt;/h3&gt;
+&lt;p&gt;以下是几个常用的，切换大小写的命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;guu&lt;/code&gt; 当前行全部小写，&lt;code&gt;gUU&lt;/code&gt; 当前行全部大写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt; 当前光标下的字符切换大小写, &lt;code&gt;3~&lt;/code&gt; 当前光标下后面三个字符切换大小写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;guiw&lt;/code&gt; 当前单词全部小写，&lt;code&gt;gUiw&lt;/code&gt; 当前单词全部大写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g~iw&lt;/code&gt; 当前单词每个字符大小写交换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;列操作&#34;&gt;列操作&lt;/h3&gt;
+&lt;p&gt;如果有多行文本要做相同的操作，可以借助 Vim 中列操作的概念来快速完成，举一个实际实际的例子，假设有以下这段代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c;
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; z;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;有一天我们发现 &lt;code&gt;int&lt;/code&gt; 不是很准确，要改成：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; a;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; b;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; c;
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;uint8_t&lt;/span&gt; z;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;难道还要手动复制粘贴不成？请看列操作大法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先按下 &lt;code&gt;Ctrl + V&lt;/code&gt; 进入列操作模式&lt;/li&gt;
+&lt;li&gt;然后用 &lt;code&gt;j&lt;/code&gt;、&lt;code&gt;k&lt;/code&gt; 进行跳转，表示你要操作多少行&lt;/li&gt;
+&lt;li&gt;这时你对每一行的操作都会应用到所有行上，比如输入 &lt;code&gt;ec&lt;/code&gt;，删除单词进入编辑模式&lt;/li&gt;
+&lt;li&gt;输入 &lt;code&gt;uint_8&lt;/code&gt;，按下 &lt;code&gt;Esc&lt;/code&gt; 退出编辑，Vim 会自动应用到所有行上。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;宏&#34;&gt;宏&lt;/h3&gt;
+&lt;p&gt;列操作的本质是多行同时操作，如果每一行的操作类似，但都有细微差别，就需要引入 录制、回放 的概念了。此时可以用 Vim 中的宏。&lt;/p&gt;
+&lt;p&gt;一个典型的场景是，我们在写 Markdown：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 第一条
+2. 第二条
+3. 第三题
+...
+10. 第十条
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;写着写着突然发现，第一条和第二条中间还要加一条，左边的序号就不好处理了，因为我们要把原来的序号 2 到 10 分别加一。&lt;/p&gt;
+&lt;p&gt;在 Vim 中，我们“只”需要输入 &lt;code&gt;qajC-aq6@a&lt;/code&gt;，相信你一定很想打我，这特么一点也不简单啊。别急，拆开来看：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;qa（q 表示开始录制宏，a 表示录制内容存储在寄存器 a 中）
+j（向下一行）
+Ctrl + a（数字加一）
+q（再按一次 q 表示结束录制）
+6@a（把存储在寄存器 a 中的宏执行 6 次）
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;是不是感觉 So Easy!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

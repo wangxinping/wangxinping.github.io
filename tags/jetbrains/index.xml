@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JetBrains | 遮天个人站</title>
+    <link>https://wangxinping.github.io/tags/jetbrains/</link>
+      <atom:link href="https://wangxinping.github.io/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
+    <description>JetBrains</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Oct 2019 16:46:04 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>JetBrains</title>
+      <link>https://wangxinping.github.io/tags/jetbrains/</link>
+    </image>
+    
+    <item>
+      <title>Intellij Idea Keymap for Mac</title>
+      <link>https://wangxinping.github.io/post/intellij-idea-keymap-for-mac/</link>
+      <pubDate>Thu, 17 Oct 2019 16:46:04 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/intellij-idea-keymap-for-mac/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;根据&lt;a href=&#34;https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf&#34;&gt;官方文档&lt;/a&gt;翻译&lt;strong&gt;修正&lt;/strong&gt;（个别快捷键与官方文档中不符）而来&lt;/li&gt;
+&lt;li&gt;在 IntelliJ IDEA 中有两个 Mac 版本的快捷键，一个叫做：Mac OS X，一个叫做：Mac OS X 10.5+&lt;/li&gt;
+&lt;li&gt;目前用的一般是最新的：Mac OS X 10.5+&lt;/li&gt;
+&lt;li&gt;有两套的&lt;a href=&#34;https://intellij-support.jetbrains.com/hc/en-us/community/posts/206159109-Updated-Mac-OS-X-keymap-Feedback-needed&#34;&gt;原因&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;建议将 Mac 系统中与 IntelliJ IDEA 冲突的快捷键取消或更改，不建议改 IntelliJ IDEA 的默认快捷键&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;mac键盘符号和修饰键说明&#34;&gt;Mac键盘符号和修饰键说明&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;⌘&lt;/code&gt; Command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇧&lt;/code&gt; Shift&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌥&lt;/code&gt; Option&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌃&lt;/code&gt; Control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↩︎&lt;/code&gt; Return/Enter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌫&lt;/code&gt; Delete&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⌦&lt;/code&gt; 向前删除键（Fn+Delete）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↑&lt;/code&gt; 上箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↓&lt;/code&gt; 下箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;←&lt;/code&gt; 左箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;→&lt;/code&gt; 右箭头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇞&lt;/code&gt; Page Up（Fn+&lt;code&gt;↑&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇟&lt;/code&gt; Page Down（Fn+&lt;code&gt;↓&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Home&lt;/code&gt; Fn + &lt;code&gt;←&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;End&lt;/code&gt; Fn + &lt;code&gt;→&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇥&lt;/code&gt; 右制表符（Tab键）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⇤&lt;/code&gt; 左制表符（Shift+Tab）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⎋&lt;/code&gt; Escape (Esc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;editing编辑&#34;&gt;Editing（编辑）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Control + Space&lt;/code&gt; 基本的代码补全（补全任何类、方法、变量）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Control + Shift + Space&lt;/code&gt; 智能代码补全（过滤器方法列表和变量的预期类型）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + Enter&lt;/code&gt; 自动结束代码，行末自动添加分号&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Command + P&lt;/code&gt; 显示方法的参数信息&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + J&lt;/code&gt; 快速查看文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + F1&lt;/code&gt; 查看外部文档（在某些代码上会触发打开浏览器显示相关文档）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + 鼠标放在代码上&lt;/code&gt; 显示代码简要信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F1&lt;/code&gt; 在错误或警告处显示具体描述信息&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + N, Control + Enter&lt;/code&gt; 生成代码（getter、setter、构造函数、hashCode/equals,toString）&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + O&lt;/code&gt; 覆盖方法（重写父类方法）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + I&lt;/code&gt; 实现方法（实现接口中的方法）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + T&lt;/code&gt; 包围代码（使用if..else, try..catch, for, synchronized等包围选中的代码）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + /&lt;/code&gt; 注释/取消注释与行注释&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + /&lt;/code&gt; 注释/取消注释与块注释&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Option + 方向键上&lt;/code&gt; 连续选中代码块&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Option + 方向键下&lt;/code&gt; 减少当前选中的代码块&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + Q&lt;/code&gt; 显示上下文信息&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Option + Enter&lt;/code&gt; 显示意向动作和快速修复代码&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + L&lt;/code&gt; 格式化代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + O&lt;/code&gt; 优化import&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + I&lt;/code&gt; 自动缩进线&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tab / Shift + Tab&lt;/code&gt; 缩进代码 / 反缩进代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + X&lt;/code&gt; 剪切当前行或选定的块到剪贴板&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + C&lt;/code&gt; 复制当前行或选定的块到剪贴板&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + V&lt;/code&gt; 从剪贴板粘贴&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + V&lt;/code&gt; 从最近的缓冲区粘贴&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + D&lt;/code&gt; 复制当前行或选定的块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Delete&lt;/code&gt; 删除当前行或选定的块的行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + J&lt;/code&gt; 智能的将代码拼接成一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Enter&lt;/code&gt; 智能的拆分拼接的行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + Enter&lt;/code&gt; 开始新的一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + U&lt;/code&gt; 大小写切换&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + Option + Shift + ] / Command + Option + Shift + [&lt;/code&gt; 选择直到代码块结束/开始&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + Shift + ] / Command + Shift + [&lt;/code&gt; 返回光标或选择到前 / 后一操作效果&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Fn + Delete&lt;/code&gt; 删除到单词的末尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Delete&lt;/code&gt; 删除到单词的开头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + 加号 / Command + 减号&lt;/code&gt; 展开 / 折叠代码块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + 加号&lt;/code&gt; 展开所以代码块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + 减号&lt;/code&gt; 折叠所有代码块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + W&lt;/code&gt; 关闭活动的编辑器选项卡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;searchreplace查询替换&#34;&gt;Search/Replace（查询/替换）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Double Shift&lt;/code&gt; 查询任何东西&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F&lt;/code&gt; 文件内查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + G&lt;/code&gt; 查找模式下，向下查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + G&lt;/code&gt; 查找模式下，向上查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + R&lt;/code&gt; 文件内替换&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F&lt;/code&gt; 全局查找（根据路径）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + R&lt;/code&gt; 全局替换（根据路径）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + S&lt;/code&gt; 查询结构（Ultimate Edition 版专用，需要在Keymap中设置）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + M&lt;/code&gt; 替换结构（Ultimate Edition 版专用，需要在Keymap中设置）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;usage-search使用查询&#34;&gt;Usage Search（使用查询）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Option + F7 / Command + F7&lt;/code&gt; 在文件中查找用法 / 在类中查找用法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F7&lt;/code&gt; 在文件中突出显示的用法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + F7&lt;/code&gt; 显示用法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;compile-and-run编译和运行&#34;&gt;Compile and Run（编译和运行）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + F9&lt;/code&gt; 编译Project&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F9&lt;/code&gt; 编译选择的文件、包或模块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + R&lt;/code&gt; 弹出 Run 的可选择菜单&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + D&lt;/code&gt; 弹出 Debug 的可选择菜单&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + R&lt;/code&gt; 运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + D&lt;/code&gt; 调试&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + R, Control + Shift + D&lt;/code&gt; 从编辑器运行上下文环境配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;debugging调试&#34;&gt;Debugging（调试）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F8&lt;/code&gt; 进入下一步，如果当前行断点是一个方法，则不进入当前方法体内&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F7&lt;/code&gt; 进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + F7&lt;/code&gt; 智能步入，断点所在行上有多个方法调用，会弹出进入哪个方法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + F8&lt;/code&gt; 跳出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F9&lt;/code&gt; 运行到光标处，如果光标前有其他断点会进入到该断点&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F8&lt;/code&gt; 计算表达式（可以更改变量值使其生效）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + R&lt;/code&gt; 恢复程序运行，如果该断点下面代码还有断点则停在下一个断点上&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F8&lt;/code&gt; 切换断点（若光标当前行有断点则取消断点，没有则加上断点）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F8&lt;/code&gt; 查看断点信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;navigation导航&#34;&gt;Navigation（导航）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + O&lt;/code&gt; 查找类文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + O&lt;/code&gt; 查找所有类型文件、打开文件、打开目录，打开目录需要在输入的内容前面或后面加一个反斜杠/&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + O&lt;/code&gt; 前往指定的变量 / 方法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + 方向键左 / Control + 方向键右&lt;/code&gt; 左右切换打开的编辑tab页&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F12&lt;/code&gt; 返回到前一个工具窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Esc&lt;/code&gt; 从工具窗口进入代码文件窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + Esc&lt;/code&gt; 隐藏当前或最后一个活动的窗口，且光标进入代码文件窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F4&lt;/code&gt; 关闭活动run/messages/find/&amp;hellip; tab&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + L&lt;/code&gt; 在当前文件跳转到某一行的指定处&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Command + E&lt;/code&gt; 显示最近打开的文件记录列表&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + 方向键左 / Option + 方向键右&lt;/code&gt; 光标跳转到当前单词 / 中文句的左 / 右侧开头位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + 方向键左 / Command + Option + 方向键右&lt;/code&gt; 退回 / 前进到上一个操作的地方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + Delete&lt;/code&gt; 跳转到最后一个编辑的地方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F1&lt;/code&gt; 显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择(如在代码编辑窗口可以选择显示该文件的Finder)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + B / Command + 鼠标点击&lt;/code&gt; 进入光标所在的方法/变量的接口或是定义处&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + B&lt;/code&gt; 跳转到实现处，在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Space, Command + Y&lt;/code&gt; 快速打开光标所在方法、类的定义&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + B&lt;/code&gt; 跳转到类型声明处&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + U&lt;/code&gt; 前往当前光标所在方法的父类的方法 / 接口定义&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + 方向键下 / Control + 方向键上&lt;/code&gt; 当前光标跳转到当前文件的前一个/后一个方法名位置&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + Option + ] / Command + Option + [&lt;/code&gt; 移动光标到当前所在代码的花括号开始/结束位置&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;code&gt;Command + ] / Command + [&lt;/code&gt; 返回光标或选择到前 / 后一操作效果&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F12&lt;/code&gt; 弹出当前文件结构层，可以在弹出的层上直接输入进行筛选（可用于搜索类中的方法）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + H&lt;/code&gt; 显示当前类的层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + H&lt;/code&gt; 显示方法层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Option + H&lt;/code&gt; 显示调用层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F2 / Shift + F2&lt;/code&gt; 跳转到下一个/上一个突出错误或警告的位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F4 / Command + 方向键下&lt;/code&gt; 编辑/查看代码源&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Home&lt;/code&gt; 显示到当前文件的导航条&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F3&lt;/code&gt; 选中文件/文件夹/代码行，添加/取消书签&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + F3&lt;/code&gt; 选中文件/文件夹/代码行，使用助记符添加/取消书签&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + 0...Control + 9&lt;/code&gt; 定位到对应数值的书签位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F3&lt;/code&gt; 显示所有书签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;refactoring重构&#34;&gt;Refactoring（重构）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F5&lt;/code&gt; 复制文件到指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F6&lt;/code&gt; 移动文件到指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Delete&lt;/code&gt; 在文件上为安全删除文件，弹出确认框&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Shift + F6&lt;/code&gt; 重命名文件&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + F6&lt;/code&gt; 更改签名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + N&lt;/code&gt; 一致性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + M&lt;/code&gt; 将选中的代码提取为方法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + V&lt;/code&gt; 提取变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + F&lt;/code&gt; 提取字段&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + C&lt;/code&gt; 提取常量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + P&lt;/code&gt; 提取参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;vcslocal-history版本控制本地历史记录&#34;&gt;VCS/Local History（版本控制/本地历史记录）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + K&lt;/code&gt; 提交代码到版本控制器&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + T&lt;/code&gt; 从版本控制器更新代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Shift + C&lt;/code&gt; 查看最近的变更记录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + C&lt;/code&gt; 快速弹出版本控制器操作面板&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;live-templates动态代码模板&#34;&gt;Live Templates（动态代码模板）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + J&lt;/code&gt; 弹出模板选择窗口，将选定的代码使用动态模板包住&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + J&lt;/code&gt; 插入自定义动态代码模板&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general通用&#34;&gt;General（通用）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + 1...Command + 9&lt;/code&gt; 打开相应编号的工具窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + S&lt;/code&gt; 保存所有&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Option + Y&lt;/code&gt; 同步、刷新&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Command + F&lt;/code&gt; 切换全屏模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + F12&lt;/code&gt; 切换最大化编辑器&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Shift + F&lt;/code&gt; 添加到收藏夹&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + Shift + I&lt;/code&gt; 检查当前文件与当前的配置文件&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;Control + `&lt;!-- raw HTML omitted --&gt; 快速切换当前的scheme（切换主题、代码样式等）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + ,&lt;/code&gt; 打开IDEA系统设置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + ;&lt;/code&gt; 打开项目结构对话框&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift + Command + A&lt;/code&gt; 查找动作（可设置相关选项）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Control + Shift + Tab&lt;/code&gt; 编辑窗口标签和工具窗口之间切换（如果在切换的过程加按上delete，则是关闭对应选中的窗口）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other一些官方文档上没有体现的快捷键&#34;&gt;Other（一些官方文档上没有体现的快捷键）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Command + Shift + 8&lt;/code&gt; 竖编辑模式&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

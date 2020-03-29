@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interview | 遮天个人站</title>
+    <link>https://wangxinping.github.io/categories/interview/</link>
+      <atom:link href="https://wangxinping.github.io/categories/interview/index.xml" rel="self" type="application/rss+xml" />
+    <description>Interview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 15:15:11 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>Interview</title>
+      <link>https://wangxinping.github.io/categories/interview/</link>
+    </image>
+    
+    <item>
+      <title>Tips for Interview</title>
+      <link>https://wangxinping.github.io/post/tips-for-interview/</link>
+      <pubDate>Tue, 29 Oct 2019 15:15:11 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/tips-for-interview/</guid>
+      <description>&lt;p&gt;mysql数据存储是怎么组织的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mysql索引是怎么组织的，有什什么需要注意的地⽅方&lt;/li&gt;
+&lt;li&gt;主键与其它索引的区别&lt;/li&gt;
+&lt;li&gt;java/c++多态是怎么实现的&lt;/li&gt;
+&lt;li&gt;⽅方法调⽤用时⽅方法栈的动作，哪些资源需要压栈，锁是否需要压栈&lt;/li&gt;
+&lt;li&gt;锁实现机制&lt;/li&gt;
+&lt;li&gt;垃圾回收算法，root节点，资源引⽤用计数为0后，⻢马上就回收资源吗？有没
+有办法再次获取并使⽤用此资源&lt;/li&gt;
+&lt;li&gt;多态是如何实现的&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

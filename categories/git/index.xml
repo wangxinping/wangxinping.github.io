@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git | 遮天个人站</title>
+    <link>https://wangxinping.github.io/categories/git/</link>
+      <atom:link href="https://wangxinping.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <description>Git</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Oct 2019 20:12:48 +0800</lastBuildDate>
+    <image>
+      <url>https://wangxinping.github.io/img/sharing_image.jpg</url>
+      <title>Git</title>
+      <link>https://wangxinping.github.io/categories/git/</link>
+    </image>
+    
+    <item>
+      <title>Welcome to Git</title>
+      <link>https://wangxinping.github.io/post/welcome-to-git/</link>
+      <pubDate>Thu, 17 Oct 2019 20:12:48 +0800</pubDate>
+      <guid>https://wangxinping.github.io/post/welcome-to-git/</guid>
+      <description>&lt;h2 id=&#34;ssh-密钥&#34;&gt;SSH 密钥&lt;/h2&gt;
+&lt;h3 id=&#34;生成-ssh-密钥&#34;&gt;生成 SSH 密钥&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ ssh-keygen -t rsa -b &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;your_email@example.com&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置-ssh-公钥到服务器&#34;&gt;配置 SSH 公钥到服务器&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ ssh-copy-id -i ~/.ssh/id_rsa.pub username@server_host
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;基本配置&#34;&gt;基本配置&lt;/h2&gt;
+&lt;h3 id=&#34;配置个人信息&#34;&gt;配置个人信息&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;全局配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git config --global user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[name]&amp;#34;&lt;/span&gt;
+$ git config --global user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[email address]&amp;#34;&lt;/span&gt;
+$ git config --global color.ui auto
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;项目配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git config user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[name]&amp;#34;&lt;/span&gt;
+$ git config user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[email address]&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git config --list
+user.name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;John Doe
+user.email&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;johndoe@example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;新建-git-仓库&#34;&gt;新建 Git 仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ cd /git_repository_path
+$ mkdir project.git
+$ cd project.git
+$ git init --bare
+Initialized empty Git repository in /git_repository_path/project.git/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git clone git@gitserver:/git_repository_path/project.git
+$ cd project
+$ vim README
+$ git add .
+$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;update the README file&amp;#39;&lt;/span&gt;
+$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;忽略规则&#34;&gt;忽略规则&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 &lt;code&gt;.gitignore&lt;/code&gt; 文件中我们可以配置需要忽略哪些文件和文件夹。注意，这个文件仅对还没有被纳入 Git 版本管理的文件生效，要停止已被追踪文件的版本管理可以使用命令&lt;code&gt;git rm --cached&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;规则&#34;&gt;规则&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空行不匹配作何文件，可以用空行来做来分隔以增强可读性。&lt;/li&gt;
+&lt;li&gt;以 &lt;code&gt;#&lt;/code&gt; 开头的行代表注释。但如果在 &lt;code&gt;#&lt;/code&gt; 前面有一个转义字符（&lt;code&gt;\&lt;/code&gt;）则匹配井号（&lt;code&gt;#&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;一般情况下行尾的空格会被忽略，但当空格前有转义字符（&lt;code&gt;\&lt;/code&gt;）时除外。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt; 前缀用于取反，即 &lt;code&gt;!&lt;/code&gt; 后面匹配到的本应该被排除的文件会被加入进来。但如果某文件的父目录已被排除，则该文件不会被再次加入进来，所以任何被包含在其它匹配项里面文件的匹配不会生效，不管它是在哪里配置的。另外，带转义的 &lt;code&gt;!&lt;/code&gt;（&lt;code&gt;\!&lt;/code&gt;）匹配 &lt;code&gt;!&lt;/code&gt; 本身。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; 被用作目录分隔符，可被用于匹配模式的开头、中间或末尾。&lt;/li&gt;
+&lt;li&gt;如果匹配模式开头或中间（或两者都有）存在 &lt;code&gt;/&lt;/code&gt;，则模式是相对于 &lt;code&gt;.gitignore&lt;/code&gt; 文件所在目录的。否则，模式还会匹配 &lt;code&gt;.gitignore&lt;/code&gt; 文件所在目录的任意层次的子目录。&lt;/li&gt;
+&lt;li&gt;如果匹配模式末尾存在 &lt;code&gt;/&lt;/code&gt;，则模式匹配只会匹配目录。否则，模式会匹配目录和文件。&lt;/li&gt;
+&lt;li&gt;举例说明，&lt;code&gt;doc/frotz/&lt;/code&gt; 会匹配 &lt;code&gt;doc/frotz&lt;/code&gt; 目录，但不会匹配 &lt;code&gt;a/doc/frotz&lt;/code&gt; 目录；但是，&lt;code&gt;frotz/&lt;/code&gt; 会匹配 &lt;code&gt;frotz&lt;/code&gt;，&lt;code&gt;a/frotz&lt;/code&gt; 等相对于 &lt;code&gt;.gitignore&lt;/code&gt; 文件的所有能匹配的目录。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; 能匹配除 &lt;code&gt;/&lt;/code&gt; 之外的任何东西。&lt;code&gt;?&lt;/code&gt; 能匹配除 &lt;code&gt;/&lt;/code&gt; 之外的任意单个字符。区间模式（如 &lt;code&gt;[a-zA-Z&lt;/code&gt;）能匹配在区间内的单个字符。&lt;/li&gt;
+&lt;li&gt;连续星号（&lt;code&gt;**&lt;/code&gt;）对匹配路径名有特殊含义：
+&lt;ul&gt;
+&lt;li&gt;以 &lt;code&gt;**&lt;/code&gt; 开头，紧跟着 &lt;code&gt;/&lt;/code&gt; 匹配所有目录。例如，&lt;code&gt;**/foo&lt;/code&gt; 匹配任意位置的 &lt;code&gt;foo&lt;/code&gt; 目录或文件，跟 &lt;code&gt;foo&lt;/code&gt; 模式一样；&lt;code&gt;**/foo/bar&lt;/code&gt; 匹配任意位置在 &lt;code&gt;foo&lt;/code&gt; 目录直接包含的 &lt;code&gt;bar&lt;/code&gt; 文件或目录。&lt;/li&gt;
+&lt;li&gt;以 &lt;code&gt;**&lt;/code&gt; 结尾，匹配里面的所有文件或目录。例如，&lt;code&gt;abc/**&lt;/code&gt; 匹配相对于 &lt;code&gt;.gitignore&lt;/code&gt; 文件的 &lt;code&gt;abc&lt;/code&gt; 目录下的所有文件或目录，不限深度。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; 后面紧跟着 &lt;code&gt;**&lt;/code&gt; 后面再跟 &lt;code&gt;/&lt;/code&gt; 匹配零个或多个目录。例如，&lt;code&gt;a/**/b&lt;/code&gt; 匹配 &lt;code&gt;a/b&lt;/code&gt;，&lt;code&gt;a/x/b&lt;/code&gt;，&lt;code&gt;a/x/y/b&lt;/code&gt;，等等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;举例&#34;&gt;举例&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hello.*&lt;/code&gt; 匹配任何以 &lt;code&gt;hello.&lt;/code&gt; 开头的文件或目录。如果要限制子目录匹配，可以在前面加上 &lt;code&gt;/&lt;/code&gt;，如 &lt;code&gt;/hello.*&lt;/code&gt;，现在该模式能匹配 &lt;code&gt;hello.txt&lt;/code&gt;，&lt;code&gt;hello.c&lt;/code&gt;，但不能匹配 &lt;code&gt;a/hello.java&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foo/&lt;/code&gt; 可以匹配任意层次的 &lt;code&gt;foo&lt;/code&gt; 目录，但是不能匹配 &lt;code&gt;foo&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;doc/frotz&lt;/code&gt; 和 &lt;code&gt;/doc/frotz&lt;/code&gt; 匹配效果相同，换句话说，如果模式中间有 &lt;code&gt;/&lt;/code&gt;，则开头的 &lt;code&gt;/&lt;/code&gt; 不是必须的。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foo/*&lt;/code&gt; 可以匹配 &lt;code&gt;foo/test.json&lt;/code&gt;（一个文件），&lt;code&gt;foo/bar&lt;/code&gt;（一个目录），但不会匹配 &lt;code&gt;foo/bar/hello.c&lt;/code&gt;，因为单个 &lt;code&gt;*&lt;/code&gt; 不会匹配带有 &lt;code&gt;/&lt;/code&gt; 的路径。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用命令&#34;&gt;常用命令&lt;/h2&gt;
+&lt;h3 id=&#34;新建检出仓库&#34;&gt;新建/检出仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;新建本地仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git init &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;project-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;检出仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git clone &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;url&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;编辑提交&#34;&gt;编辑提交&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;列出所有文件变化（新建或修改），查看仓库状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示未暂存文件的改动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示暂存区文件与最近版本的区别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff --staged
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;添加文件到暂存区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git add &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+$ git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;取消暂存，但保持文件内容不变&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;将暂存区内容提交到当前分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[descriptive message]&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注释可以通过单引号来换行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;gt; 1.提交内容
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;gt; 2.注释文本
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;gt; &amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git add&lt;/code&gt; 和 &lt;code&gt;git commit&lt;/code&gt; 可以合在一起写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git commit -am &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;代码提交注释&amp;#34;&lt;/span&gt;
+$ git commit -a -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;代码提交注释&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;操作分支&#34;&gt;操作分支&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;列出所有本地分支（前面有 &lt;code&gt;*&lt;/code&gt; 的为当前分支）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看远程分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -r
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看所有分支（本地 + 远程）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建新分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;切换到指定分支并更新工作目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git checkout &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建并切换分支快捷命令（相当于上面两个命令的合体）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git checkout -b &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;修改分支名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -m &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;old-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;new-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;切换回主分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git checkout master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;合并指定分支到当前分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git merge &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;合并分支时，Git 会默认用 Fast forward 模式，此模式下，删除分支后，会丢掉分支信息；而且当所有分支都有改动时，容易出错，建议添加 &lt;code&gt;--no-ff&lt;/code&gt; 参数，禁用 Fast forward 模式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;合并分支时，加上 &lt;code&gt;--no-ff&lt;/code&gt; 参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而 Fast forward 合并就看不出来曾经做过合并。合并时要创建一个新的 commit，所以加上 &lt;code&gt;-m&lt;/code&gt; 参数，把 commit 描述写进去。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git merge --no-ff -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;merge with --no-ff&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除指定分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -d &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;强行删除指定分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git branch -D &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;重构文件&#34;&gt;重构文件&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Relocate and remove versioned files&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;从工作目录删除文件并暂存此删除操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git rm &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;从版本控制系统删除文件但保留对应本地文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git rm --cached &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;修改文件名并准备提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git mv &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file-original&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file-renamed&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;排除gitignore&#34;&gt;排除（&lt;code&gt;.gitignore&lt;/code&gt;）&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Exclude temporary files and paths&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;列出当前项目所有排除文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git ls-files --other --ignored --exclude-standard
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;保存工作现场&#34;&gt;保存工作现场&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;存储&lt;/em&gt;当前工作现场，等以后恢复现场后继续工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;恢复&lt;em&gt;存储&lt;/em&gt;的工作现场，恢复的同时把 stash 内容也删掉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash pop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看&lt;em&gt;存储&lt;/em&gt;的工作现场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;可以多次 &lt;code&gt;stash&lt;/code&gt;，恢复的时候，先用 &lt;code&gt;git stash list&lt;/code&gt; 查看，然后恢复指定的stash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash apply stash@&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;丢弃最近&lt;em&gt;存储&lt;/em&gt;的工作现场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git stash drop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;检查历史&#34;&gt;检查历史&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;列出当前分支版本历史&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;列出文件版本历史，包含重命名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --follow &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;log 输出信息压缩命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --pretty&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;oneline
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看指定文件版本库日志&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log  &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;filename&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看分支合并图&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --graph
+$ git log --graph --pretty&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;oneline --abbrev-commit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看 log 参数的更多信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git log --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看分支间的差异&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;first-branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;...&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;second-branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看分支之间的差异。在合并改动之前，你可以使用如下命令预览差异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git diff &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;source-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;target-branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;输出特定提交的元数据和修改的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git show &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看HEAD的移动历史&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reflog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;版本回退&#34;&gt;版本回退&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;撤回所有提交，但保留本地改动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;丢弃所有历史和修改并回到特定提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到当前版本，放弃所有没有提交的修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到上个版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到上上个版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD^^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到往上的第6个版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard HEAD~6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;回到指定版本号的版本（&lt;code&gt;3628164&lt;/code&gt; 这段数字是 commit id，也就是所谓的版本号，它是一大串字符串的前几位，我们没必要把一整串 commit id 都写出来）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git reset --hard &lt;span style=&#34;color:#ae81ff&#34;&gt;3628164&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;同步修改&#34;&gt;同步修改&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Downloads all history from the repository bookmark&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git fetch &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bookmark&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Combines bookmark’s branch into current local branch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git merge &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bookmark&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Uploads all local branch commits to GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;alias&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Downloads bookmark history and incorporates changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;远程仓库&#34;&gt;远程仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;关联一个远程仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git remote add origin &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;url&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;第一次推送 &lt;code&gt;master&lt;/code&gt; 分支的所有内容，使用 &lt;code&gt;-u&lt;/code&gt; 参数，Git 不但会把本地的 &lt;code&gt;master&lt;/code&gt; 分支内容推送的远程新的 &lt;code&gt;master&lt;/code&gt; 分支，还会把本地的 &lt;code&gt;master&lt;/code&gt; 分支和远程的 &lt;code&gt;master&lt;/code&gt; 分支关联起来。此后，每次本地提交后，只要有必要，就可以使用命令 &lt;code&gt;git push origin master&lt;/code&gt; 推送最新修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;推送最新修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;除非你将分支推送到远端仓库，不然他人就看不到该分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;branch-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看远程仓库地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git remote -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;标签&#34;&gt;标签&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;查看所有标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;切换到需要打标签的分支上，使用下面命令就可以打一个新标签（标签是默认打在最新提交的 commit 上的）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;打标签到指定的 commit 上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit-id&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看标签信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git show &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;创建带有说明的标签。&lt;code&gt;-a&lt;/code&gt;：指定标签名，&lt;code&gt;-m&lt;/code&gt;：指定说明文字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag -a &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag description&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;commit-id&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除本地标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git tag -d &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;推送指定标签到远程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;推送全部尚未推送到远程的本地标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin --tags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除指定远程标签（在删除远程标签之前，要先从本地删除）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ git push origin :refs/tags/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;tag-name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
